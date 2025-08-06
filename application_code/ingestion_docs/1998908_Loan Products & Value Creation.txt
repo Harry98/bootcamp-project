@@ -1,0 +1,106 @@
+Title of the page is Loan Products & Value Creation 
+ 
+ Page Created by: Kartik Sharma
+ Page Last edited by: Kartik Sharma
+ and markdown of the page is 
+ ## 1\. Introduction
+Maple Trust Bank offers a range of loan solutions designed to meet personal,
+household, and business needs while maintaining sustainable profitability.
+Each product balances fair pricing for customers with prudent risk‐adjusted
+returns for the bank, allowing us to reinvest in better services, digital
+innovation, and community programs.
+ *
+2\. Personal & Consumer Loans
+Loan Type| Typical Purpose| Customer Benefits| Bank Value Creation* 
+---|---|---|--- 
+ Personal Installment Loan| Debt consolidation, major purchases| Fixed
+rate, predictable payments; quick approval| Net Interest Margin (NIM) on
+amortizing balance; modest origination fee 
+Auto Loan| New or used vehicle financing| Competitive fixed rates;
+pre‐approval at dealership| Partnership subsidies with dealers; cross‐sell
+insurance 
+Line of Credit (LoC)| Flexible short‐term borrowing| Interest charged
+only on drawn amount; reusable limit| Variable‐rate spread above prime;
+commitment fee on unused limit 
+Student Loan| Tuition, textbooks, living expenses| Interest subsidy while
+in school; flexible repayment| Long‐term relationship, graduate upsell to
+other products 
+Home Equity Line of Credit (HELOC)| Renovations, large expenses| Lower
+rate secured by home equity; interest‐only option| Secured spread below
+unsecured LoC; collateral reduces credit losses 
+ 
+ * How the Bank Profits:
+ 
+Profit=(Interest Rate−Cost of Funds−Expected Loss)×Outstanding
+Principal+Fees\displaystyle \text{Profit} = (\text{Interest Rate} - \text{Cost
+of Funds} - \text{Expected Loss}) \times \text{Outstanding Principal} +
+\text{Fees}
+ *
+3\. Mortgage Lending
+Product Variant| Key Features| Customer Benefits| Profit Drivers 
+---|---|---|--- 
+Fixed‐Rate Mortgage| 1‐, 3‐, 5‐, or 10‐year terms| Payment stability|
+Spread locked for term; breakage fees 
+Variable‐Rate Mortgage| Rate floats with prime (caps available)| Benefit
+if rates fall; convertible to fixed| Variable spread; lower duration risk 
+Cashback Mortgage| Lump‐sum cashback at funding| Up‐front funds for
+closing costs| Slightly higher rate offsets cashback 
+Newcomer & First‐Time Buyer Program| Reduced down‐payment, advice bundle|
+Easier entry into housing market| CMHC‐insured, minimizes credit risk 
+ 
+Economic Model: Mortgages create a long‐duration asset funded primarily by
+low‐cost deposits, producing stable net interest income. Ancillary revenue:
+mortgage life insurance, homeowner's insurance referrals, and retention when
+clients renew.
+ *
+4\. Business & Commercial Lending
+Facility| Typical Use Case| Customer Benefits| Bank Profit Logic 
+---|---|---|--- 
+Term Loan| Equipment purchase, expansion| Fixed amortization aligns with
+asset life| Asset‐backed collateral lowers LGD1 
+Operating Line| Working‐capital swings| Revolving credit; interest only
+on used balance| Prime‐based pricing with standby fee on undrawn portion 
+Commercial Mortgage| Office, retail, industrial property| Long
+amortization, predictable payments| Real estate collateral; fee income for
+appraisals 
+Agricultural Operating Loan| Seed, fertilizer, livestock feed| Seasonal
+repayment aligned with harvest cycle| Government guarantee programs reduce
+capital charges 
+Equipment Leasing| Trucks, heavy machinery| 100 % financing; tax
+deductibility| Residual asset value plus lease rate spread 
+ 
+1LGD: Loss Given Default. Lower LGD increases risk‐adjusted return.
+ *
+5\. Responsible Profit Framework
+ 1. Risk‐Based Pricing - Rates reflect probability of default (PD) and LGD, ensuring high‐credit customers pay less while higher‐risk loans remain sustainable.
+ 2. Inclusive Access - Products like Student Loans and Newcomer Mortgages expand financial inclusion, forging long‐term relationships that generate lifetime value.
+ 3. Cross‐Sell Synergy - Loans often introduce customers to savings, insurance, or investment products, diversifying revenue and boosting customer success.
+ 4. Capital Efficiency - Careful balance‐sheet management (e.g., securitizing mortgages) frees capital for more lending, amplifying community impact.
+ *
+6\. Example Profit Calculation
+> Five‐Year Fixed Mortgage
+>
+> * Principal: $400,000
+>
+> * Rate: 5.29 %
+>
+> * Cost of Funds: 2.10 %
+>
+> * Expected Credit Loss: 0.12 %
+>
+> * Servicing & Capital Cost: 0.60 %
+>
+>
+Net Spread=5.29−2.10−0.12−0.60=2.47%\text{Net Spread}=5.29-2.10-0.12-0.60 =
+2.47\%
+Annual profit ≈ $400,000 × 2.47 % = $9,880 (before tax). A portion funds
+digital upgrades, branch services, and community outreach.
+ *
+7\. Community Impact
+ * Local Job Creation: Lending to small businesses supports employment growth.
+ * Financial Education: Loan officers provide budgeting guidance during origination.
+ * Housing Affordability: First‐time buyer programs open doors to home ownership.
+ * Green Financing: Preferential rates for energy‐efficient home upgrades and electric vehicle loans reduce carbon footprint.
+ *
+> Questions about our lending programs? Speak with a Maple Trust Bank advisor
+> or call 1‐800‐MAPLE‐TR.

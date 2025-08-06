@@ -1,0 +1,83 @@
+Title of the page is HR knowledge Overview 
+ 
+ Page Created by: Johnson Zhuang
+ Page Last edited by: Johnson Zhuang
+ and markdown of the page is 
+ Welcome to the Human Resources Knowledge Hub -- your one-stop resource for
+all employee-related guidelines, policies, and programs. This hub supports a
+positive, productive, and inclusive workplace by providing clarity on
+expectations, benefits, and opportunities.
+> Last Updated: July 24, 2025
+> Maintained by: [HR Team](mailto:hr@yourcompany.com)
+ *
+ HR Documentation Index
+Section| Description 
+---|--- 
+ 
+ 1. HR Policies & Employee Handbook
+| Foundational rules, codes of conduct, and company values. 
+ 
+ 2. Employee Onboarding
+| Step-by-step guide for new hires, from pre-boarding to Day 90. 
+ 
+ 3. Compensation & Benefits
+| Salary structure, bonus plans, health benefits, and perks. 
+ 
+ 4. Time Off Policy
+| Vacation, sick leave, parental leave, and statutory holidays. 
+ 
+ 5. Performance & Career Growth
+| Performance reviews, promotions, career planning, and feedback. 
+ 
+ 6. Diversity, Equity & Inclusion (DEI)
+| Our vision, programs, and commitments for an inclusive workplace. 
+ 
+ 7. Learning & Development
+| Training opportunities, mentorship programs, and career resources. 
+ 
+ 8. Remote & Hybrid Work Guidelines
+| Expectations and best practices for remote and hybrid teams. 
+ 
+> Use the sidebar or search bar to find specific information quickly.
+ *
+ HR Mission & Philosophy
+> "People first, always."
+Our HR philosophy is built around respect, inclusion, development, and
+performance. We aim to:
+ * Attract and retain top talent
+ * Empower employees to grow and thrive
+ * Build a culture of trust and accountability
+ * Ensure legal compliance and ethical operations
+ *
+ Who to Contact
+Topic| Contact 
+---|--- 
+General HR Inquiries| [hr@yourcompany.com](mailto:hr@yourcompany.com) 
+Benefits & Payroll| [payroll@yourcompany.com](mailto:payroll@yourcompany.com) 
+Onboarding Support|
+[onboarding@yourcompany.com](mailto:onboarding@yourcompany.com) 
+Diversity & Inclusion| [dei@yourcompany.com](mailto:dei@yourcompany.com) 
+IT Equipment| [it-support@yourcompany.com](mailto:it-support@yourcompany.com) 
+ 
+ *
+ Frequently Used Resources
+ * New Hire Checklist
+ * Benefits Portal
+ * Company Holiday Calendar
+ * Learning Portal
+ * Performance Review Toolkit
+ *
+ Confidentiality Notice
+All HR materials are internal to the organization. Sharing outside the company
+is strictly prohibited unless authorized.
+ *
+ Final Thoughts
+We encourage you to explore the HR hub frequently, stay informed, and reach
+out to us with any questions. This content will evolve with your needs and the
+company's growth.
+> "Great companies are built by great people. We're here to support your
+> journey."
+ *
+Let me know if you'd like this overview page to include links to actual
+Confluence page titles (once published), or if you'd like to embed a nav panel
+or page tree macro for easier access.

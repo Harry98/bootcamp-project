@@ -1,0 +1,47 @@
+Title of the page is Monitoring & Observability 
+ 
+ Page Created by: Harkanwal Grewal
+ Page Last edited by: Harkanwal Grewal
+ and markdown of the page is 
+ ## Production Monitoring Dashboard
+Last Updated: July 25, 2025 
+Owner: SRE Team 
+Dashboard: <https://monitoring.bank.internal>
+Key Performance Indicators
+System Health (Real-Time)
+ * Overall System Status: Healthy
+ * Critical Alerts: 0 active
+ * Warning Alerts: 3 active
+ * Services Degraded: 0/12
+ * Planned Maintenance: None scheduled
+Golden Signals (Last 4 hours)
+Service-Level Metrics
+Authentication Service
+Account Service
+Transaction Service
+Infrastructure Metrics
+Kubernetes Cluster
+ * Cluster Version: EKS 1.27.3
+ * Node Count: 24 (c5.2xlarge)
+ * Pod Count: 127/150 (85% utilization)
+ * CPU Utilization: 38% cluster-wide
+ * Memory Utilization: 62% cluster-wide
+ * Network I/O: 245 Mbps in, 189 Mbps out
+Database Performance
+Alert Configuration
+Critical Alerts (PagerDuty)
+Warning Alerts (Slack)
+Observability Tools
+Metrics & APM
+ * Datadog: Custom dashboards, distributed tracing
+ * Prometheus: Infrastructure metrics, alerting rules
+ * Grafana: 47 dashboards, 156 panels
+ * New Relic: Application performance monitoring
+Logging
+ * ELK Stack: 5.7M logs/day indexed
+ * Log Retention: 30 days hot, 90 days warm, 7 years cold
+ * Log Volume by Service:
+ * transaction-service: 2.1M logs/day
+ * audit-service: 1.8M logs/day
+ * auth-service: 890K logs/day
+ * account-service: 780K logs/day

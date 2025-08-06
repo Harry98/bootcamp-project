@@ -1,0 +1,32 @@
+Title of the page is System Architecture Overview 
+ 
+ Page Created by: Harkanwal Grewal
+ Page Last edited by: Harkanwal Grewal
+ and markdown of the page is 
+ ## Core Banking Platform Architecture
+Last Updated: July 25, 2025 
+Owner: Platform Engineering Team 
+Status: Production Ready
+Executive Summary
+The CoreBank platform processes 2.3M transactions daily across 450,000
+active users with 99.97% uptime. Built on AWS cloud infrastructure using
+microservices architecture, the system handles peak loads of 8,500 TPS
+during business hours.
+Infrastructure Metrics
+Service Architecture
+Technology Stack
+Container Platform:
+ * Kubernetes: EKS v1.27.3
+ * Container Runtime: containerd 1.6.21
+ * Service Mesh: Istio 1.18.2
+ * Total Pods: 127 across 3 environments
+Databases:
+ * Primary: PostgreSQL 14.8 (RDS Multi-AZ)
+ * Cache: Redis 7.0.11 (ElastiCache)
+ * Message Queue: Apache Kafka 3.4.0
+ * Search: Elasticsearch 8.8.0
+Security & Compliance:
+ * Identity: OAuth2 + JWT (RS256)
+ * Secrets: AWS Secrets Manager
+ * Encryption: AES-256 (rest), TLS 1.3 (transit)
+ * Compliance: PCI DSS Level 1, SOC 2 Type II

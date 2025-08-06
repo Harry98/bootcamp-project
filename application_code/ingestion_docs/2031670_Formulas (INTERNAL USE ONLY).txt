@@ -1,0 +1,55 @@
+Title of the page is Formulas (INTERNAL USE ONLY) 
+ 
+ Page Created by: Kartik Sharma
+ Page Last edited by: Kartik Sharma
+ and markdown of the page is 
+ ### Internal Formula Cheat‐Sheet - Maple Trust Bank
+| Formula| Variables & Notes 
+---|---|--- 
+ 
+ 1. Net Interest Margin (NIM)
+| NIM=Interest Income−Interest ExpenseAverage Earning Assets\displaystyle
+\text{NIM}= \frac{\text{Interest Income}-\text{Interest
+Expense}}{\text{Average Earning Assets}}| Measures spread the bank earns on
+core lending & investing activities. 
+ 
+ 2. Adjusted Return on Risk‐Weighted Assets (ARRWA)
+| ARRWA=Net Income−Expected Credit LossesRisk‐Weighted Assets\displaystyle
+\text{ARRWA}= \frac{\text{Net Income}-\text{Expected Credit
+Losses}}{\text{Risk‐Weighted Assets}}| Filters out credit‐loss drag to show
+risk‐adjusted profitability. 
+ 
+ 3. Liquidity Stress Ratio (LSR)
+| LSR=High‐Quality Liquid Assets−30‐Day Net Cash OutflowsTotal Funding
+Liabilities\displaystyle \text{LSR}= \frac{\text{High‐Quality Liquid
+Assets}-\text{30‐Day Net Cash Outflows}}{\text{Total Funding Liabilities}}| >
+1 ⇒ comfortable liquidity cushion under 30‐day stress. 
+ 
+ 4. Dynamic Loan Pricing
+| Offer Rate=r0+(k1PD+k2LGD+k3EAD)+COF+Target Margin\displaystyle \text{Offer
+Rate}=r_0 + \bigl(k_1PD + k_2LGD + k_3EAD\bigr) + \text{COF} + \text{Target
+Margin}| _r0_ : base rate (e.g., 1‐month CDOR). _PD_ , _LGD_ , _EAD_ : Basel
+credit‐risk drivers. _COF_ : cost of funds. 
+ 
+ 5. Credit‐Card Expected Loss per Account
+| EL=(Monthly Spend×PD×LGD)−(Annual Fee×Retention Rate)\displaystyle EL =
+\bigl(\text{Monthly Spend}\times PD \times LGD\bigr)-\bigl(\text{Annual
+Fee}\times \text{Retention Rate}\bigr)| Captures charge‐off risk net of fee
+income. 
+ 
+ 6. Savings‐Account Growth Projection
+| Bt=P ⁣(1+rm)mt+∑i=1nDi ⁣(1+rm)m (t−ti)\displaystyle
+B_t=P\\!\left(1+\frac{r}{m}\right)^{mt}+ \sum_{i=1}^{n}
+D_i\\!\left(1+\frac{r}{m}\right)^{m\,(t-t_i)}| _P_ : opening balance. _r_ :
+annual rate. _m_ : compounding freq. _Di_ : periodic deposits. 
+ 
+ 7. Customer Lifetime Value (CLV)
+| CLV=∑t=1TNet Revenuet−Costt(1+d)t\displaystyle \text{CLV}=
+\sum_{t=1}^{T}\frac{\text{Net Revenue}_t-\text{Cost}_t}{(1+d)^t}| Discounted
+cash‐flow of a relationship; _d_ = hurdle rate. 
+ 
+ 8. Risk‐Adjusted Net Interest Income (RANII)
+| RANII=(Interest Income×(1−PD))−Interest Expense−(Credit
+Cost×LGD)\displaystyle \text{RANII}= \bigl(\text{Interest
+Income}\times(1-PD)\bigr)-\text{Interest Expense}-\bigl(\text{Credit
+Cost}\times LGD\bigr)| Shows "clean" NII after expected loss provisioning.

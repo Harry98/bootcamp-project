@@ -1,0 +1,68 @@
+Title of the page is Inbound vs. Outbound Sales Metrics Dashboard 
+ 
+ Page Created by: Chris Harper
+ Page Last edited by: Chris Harper
+ and markdown of the page is 
+ Owner: Priya Nair, Sales Operations 
+Last Updated: July 1, 2025 
+Status: Active
+ *
+Purpose
+This dashboard tracks and compares the performance of inbound and
+outbound sales efforts. It's used by sales leaders, operations, and
+marketing to evaluate lead source effectiveness, optimize conversion paths,
+and guide future investment.
+ *
+Key Definitions
+ * Inbound Leads : Generated through marketing channels (e.g. website, paid ads, content downloads, webinars)
+ * Outbound Leads : Prospected by our BDR team via cold outreach (email, phone, LinkedIn)
+ *
+Summary Metrics (Q2 2025)
+Metric| Inbound| Outbound| Total 
+---|---|---|--- 
+Leads Created| 1,250| 880| 2,130 
+Qualified Opportunities| 460| 320| 780 
+Opportunities to Deals| 135| 82| 217 
+Win Rate| 29.3%| 25.6%| 27.8% 
+Avg. Deal Size| $9,800| $12,300| $10,900 
+New ARR| $1.32M| $1.01M| $2.33M 
+ 
+ *
+Pipeline Conversion Funnel
+Inbound Funnel:
+ * Lead to Opp: 36.8%
+ * Opp to Close: 29.3%
+Outbound Funnel:
+ * Lead to Opp: 36.4%
+ * Opp to Close: 25.6%
+ _Takeaway:_ Inbound leads convert slightly better at each stage, but
+outbound wins tend to be larger deals.
+ *
+Channel Breakdown
+Channel| Leads| Opportunities| Win Rate| Notes 
+---|---|---|---|--- 
+Website Contact Form| 420| 160| 30.6%| Highest-converting inbound source 
+Webinars| 280| 95| 28.4%| Highly engaged prospects 
+Paid LinkedIn Ads| 220| 78| 24.5%| Good volume, lower intent 
+Cold Email (Outbound)| 480| 190| 26.1%| Strongest outbound source 
+Cold Calling| 250| 85| 23.5%| Improving after call script refresh 
+ 
+ *
+Insights & Recommendations
+ Inbound investments are paying off -- especially through webinars and
+gated content.
+️ Outbound email conversion is plateauing -- recommend testing new copy
+variants in Q3.
+ Average deal size for outbound is higher -- double down on outbound for
+enterprise prospects.
+ Next Review: August 5, 2025 (Q3 Midpoint Review)
+ *
+Reports & Resources
+ * Full Salesforce Dashboard - Inbound/Outbound Metrics
+ * Weekly Pipeline Report Template
+ * Outbound Messaging Library (Google Drive)
+ *
+Questions?
+For dashboard access, reporting requests, or metric definitions, reach out to
+Priya Nair (Sales Ops) at
+[priya@fictionalco.com](mailto:priya@fictionalco.com).

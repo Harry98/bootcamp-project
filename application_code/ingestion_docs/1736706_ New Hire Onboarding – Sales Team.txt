@@ -1,0 +1,40 @@
+Title of the page is New Hire Onboarding – Sales Team 
+ 
+ Page Created by: Chris Harper
+ Page Last edited by: Chris Harper
+ and markdown of the page is 
+ Owner: Sarah Kim, Sales Enablement Manager 
+Last Updated: July 1, 2025 
+Status: In Progress
+ *
+️ Onboarding Timeline: First 30 Days
+Week| Focus| Key Activities 
+---|---|--- 
+Week 1| Orientation & Tools| Company intro, system access, CRM training 
+Week 2| Product & Process| Product deep dive, sales process walkthrough 
+Week 3| Shadow & Simulate| Shadow calls, practice demos, mock objections 
+Week 4| Go Live| Begin handling inbound leads, weekly coaching 
+ 
+Key Resources
+ * Sales Playbook -> [Link]
+ * CRM Guidelines & Naming Conventions -> [Link]
+ * Product Overview Deck -> [Link]
+ * Top 10 FAQs from New Reps -> [Link]
+ * Gong Call Library: High-Performing Demos -> [Link]
+ *
+Meet Your Team
+Name| Role| Contact 
+---|---|--- 
+Jane Reynolds| VP of Sales|
+[jane@fictionalco.com](mailto:jane@fictionalco.com) 
+Marcus Lee| Team Lead - SMB|
+[marcus@fictionalco.com](mailto:marcus@fictionalco.com) 
+Priya Nair| Sales Ops| [priya@fictionalco.com](mailto:priya@fictionalco.com) 
+Brian Ortega| Sales Enablement|
+[brian@fictionalco.com](mailto:brian@fictionalco.com) 
+ 
+Tips from Recent Hires
+> _" Bookmark your sales playbook early -- I referenced it daily in my first
+> month."_ 
+> _" Don't hesitate to ask questions. Everyone's been super helpful."_ 
+> _" Shadowing calls was the fastest way to learn what great looks like."_

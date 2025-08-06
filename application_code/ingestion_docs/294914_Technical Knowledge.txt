@@ -1,0 +1,100 @@
+Title of the page is Technical Knowledge 
+ 
+ Page Created by: Harkanwal Grewal
+ Page Last edited by: Harkanwal Grewal
+ and markdown of the page is 
+ ### Banking Application - Technical Architecture Overview
+ *
+Page 1: Overview of Core Banking Architecture
+The banking platform is composed of multiple microservices operating within a
+secure, scalable, cloud-native infrastructure. The application is deployed
+across multiple Availability Zones within a Virtual Private Cloud (VPC) hosted
+on AWS.
+Key Highlights:
+ * All services are containerized using Docker and orchestrated with Kubernetes (EKS).
+ * Private communication is ensured via VPC with private subnets and security groups.
+ * Services interact via REST APIs and asynchronous messaging (Kafka).
+ * CI/CD pipeline powered by GitHub Actions and ArgoCD.
+Core Services:
+ * Authentication Service : Handles login, JWT issuance
+ * Account Service : Manages user accounts, balances, transactions
+ * Transaction Service : Handles fund transfers, payment processing
+ * Notification Service : Sends emails, SMS, and push notifications
+ * Audit Service : Tracks and stores system events for compliance
+ *
+Page 2: Network and Infrastructure Design
+VPC Configuration:
+ * VPC CIDR : `10.0.0.0/16`
+ * Subnets :
+ * `10.0.1.0/24` (Private Subnet A - Zone A)
+ * `10.0.2.0/24` (Private Subnet B - Zone B)
+ * `10.0.3.0/24` (Public Subnet A - Zone A)
+ * `10.0.4.0/24` (Public Subnet B - Zone B)
+Internal DNS Naming:
+Service| Internal DNS 
+---|--- 
+auth-service| `auth.internal.bank.local` 
+account-service| `account.internal.bank.local` 
+transaction-service| `tx.internal.bank.local` 
+audit-service| `audit.internal.bank.local` 
+kafka-broker| `kafka.internal.bank.local` 
+ 
+Load Balancer:
+ * Public ALB for login & registration: `https://api.bank.com`
+ * Internal NLB for internal service-to-service communication
+ *
+Page 3: API Gateway & Service Communication
+Public Endpoints (via API Gateway):
+Method| Endpoint| Service 
+---|---|--- 
+POST| `/api/v1/auth/login`| auth-service 
+POST| `/api/v1/accounts`| account-service 
+POST| `/api/v1/transactions/transfer`| transaction-service 
+ 
+Internal REST Communication:
+ * Auth -> Account: Fetch user roles
+ * Transaction -> Account: Validate balance
+ * Account -> Audit: Log account changes
+Message Topics:
+ * `transaction.completed`
+ * `account.updated`
+ * `user.logged_in`
+Services publish/subscribe to Kafka topics using Avro-encoded messages.
+ *
+Page 4: Security and Compliance
+Authentication:
+ * All external endpoints secured with OAuth2 (JWT tokens)
+ * Tokens validated at API Gateway and downstream services
+Network Security:
+ * Private services not exposed outside VPC
+ * NACLs and Security Groups enforce least privilege access
+ * No direct internet access for internal services
+Data Protection:
+ * All data encrypted at rest (KMS) and in transit (TLS 1.3)
+ * Secrets managed via AWS Secrets Manager
+Compliance:
+ * Logs forwarded to centralized ELK stack with restricted access
+ * Data residency policies enforced per region (e.g., CA, EU)
+ * Role-Based Access Control (RBAC) for all service dashboards
+ *
+Page 5: Deployment & Monitoring
+CI/CD Flow:
+ 1. Developer pushes code to `main` branch
+ 2. GitHub Actions runs unit and integration tests
+ 3. Docker image pushed to Amazon ECR
+ 4. ArgoCD triggers a deployment to EKS
+Monitoring & Observability:
+ * Datadog : Metrics and traces
+ * ELK Stack : Centralized logging
+ * Prometheus + Grafana : Real-time dashboards
+ * PagerDuty : Alerting for production incidents
+Sample Dashboard Metrics:
+ * Transactions per minute
+ * Failed logins
+ * API latency by endpoint
+ * Database query durations
+ *
+This technical documentation provides a realistic and complete picture of a
+modern banking application's backend system. It is designed to assist
+engineering, DevOps, and security teams in understanding the technical flow,
+integration patterns, and operational structure of the system.

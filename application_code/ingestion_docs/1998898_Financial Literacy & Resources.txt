@@ -1,0 +1,70 @@
+Title of the page is Financial Literacy & Resources 
+ 
+ Page Created by: Kartik Sharma
+ Page Last edited by: Kartik Sharma
+ and markdown of the page is 
+ ## 1\. Introduction
+Empowering our customers with knowledge is at the heart of Maple Trust Bank's
+mission. Explore our curated library of articles, calculators, and tutorials
+designed to help you budget effectively, build savings, manage credit
+responsibly, and make informed investment decisions.
+ *
+2\. Articles & Guides
+Access our Knowledge Base for in‐depth articles on:
+ * Budgeting fundamentals
+ * Building and maintaining an emergency fund
+ * Understanding and improving credit scores
+ * Debt‐reduction strategies
+ * Investing basics and portfolio diversification
+ * Retirement planning with RRSPs and TFSAs
+ *
+3\. Interactive Calculators
+Our online portal features calculators for:
+ * Monthly budgeting and expense tracking
+ * Comparing debt‐repayment strategies
+ * Planning savings goals
+ * Estimating mortgage affordability
+ * Projecting retirement savings needs
+ *
+4\. Tutorials & Webinars
+ * On‐Demand Video Tutorials: Core features of online/mobile banking, budgeting tools, credit‐report insights, and investing overviews.
+ * Live Webinars: Regular sessions such as "Master Your Budget," "Credit Management Best Practices," and "Investing in Volatile Markets."
+ * In‐Branch Workshops: Hands‐on events covering budgeting boot camps, small‐business cash‐flow planning, and student financial wellness.
+ *
+5\. Downloadable Resources
+Find downloadable e‐books, whitepapers, templates, and checklists in our
+Resources repository, covering:
+ * Budget workbooks
+ * Home‐buying guides
+ * Debt‐reduction planners
+ * Investment review checklists
+ *
+6\. Community & Support
+ * Discussion Forum: Share tips and experiences with fellow customers.
+ * Ask an Advisor: Monthly Q&A posts answered by our financial experts.
+ * Financial Coaching: Schedule one‐on‐one virtual sessions with certified coaches.
+ *
+7\. Glossary of Terms
+A quick‐reference list of common financial terms to help you navigate our
+products and services:
+ * APR (Annual Percentage Rate): The annual cost of borrowing, expressed as a percentage.
+ * Amortization: The process of paying off debt over time through regular payments that cover both principal and interest.
+ * Balance Transfer: Moving an outstanding balance from one credit card to another, often to take advantage of lower interest rates.
+ * Collateral: An asset pledged by a borrower to secure a loan, which the lender can seize if the borrower defaults.
+ * Compound Interest: Interest calculated on the initial principal and also on the accumulated interest of previous periods.
+ * Credit Utilization Ratio: The percentage of available credit that is currently being used; impacts credit score.
+ * Dividend: A portion of a company's earnings distributed to shareholders, typically as cash or additional shares.
+ * Equity: The value of an owner's interest in an asset, calculated as the asset's market value minus liabilities.
+ * Liquidity: The ease with which an asset can be converted into cash without affecting its market price.
+ * Liquidity Ratio: A measure of a company's ability to meet short‐term obligations with its most liquid assets.
+ * Minimum Payment: The lowest amount you must pay by the due date to keep your account in good standing.
+ * NSF Fee (Non‐Sufficient Funds Fee): A charge applied when you attempt a transaction without enough funds in your account.
+ * Overdraft Protection: A linked line of credit or account that covers transactions when your chequing account balance is insufficient.
+ * Principal: The original sum of money borrowed or invested, excluding any interest or dividends.
+ * Reward Points: Points earned through credit card or loyalty programs that can be redeemed for travel, merchandise, statement credits, and more.
+ * Yield: The income return on an investment, expressed as a percentage of the investment's cost or current market value.
+ *
+> For personalized guidance or technical assistance with any of these
+> resources, contact our Financial Education Team at
+> [financiallearning@mapletrustbank.ca](mailto:financiallearning@mapletrustbank.ca)
+> or call 1‐800‐MAPLE‐TR.

@@ -1,0 +1,93 @@
+Title of the page is Remote & Hybrid Work Guidelines 
+ 
+ Page Created by: Johnson Zhuang
+ Page Last edited by: Johnson Zhuang
+ and markdown of the page is 
+ Our workplace philosophy is built around flexibility, trust, and
+performance. This page outlines expectations and best practices for remote
+and hybrid work to ensure alignment, productivity, and employee well-being.
+> Last Updated: July 24, 2025
+> Contact: [workplace@yourcompany.com](mailto:workplace@yourcompany.com)
+ *
+ Overview
+We support both fully remote and hybrid work models , depending on
+role requirements, team agreements, and geographic considerations.
+Work Mode| Description 
+---|--- 
+ Remote| Employees work entirely outside of a company office location. 
+ Hybrid| Employees split time between remote work and office presence. 
+ In-Office| Required for roles tied to physical presence or equipment. 
+ 
+Your manager will confirm your role's classification during onboarding or team
+planning cycles.
+ *
+ Remote Work Eligibility
+Employees may be eligible to work remotely if:
+ * The role does not require on-site presence
+ * Performance and communication standards are consistently met
+ * They reside in an approved geographic region (due to legal or payroll constraints)
+> International remote work may require special approval due to legal and
+> tax implications.
+ *
+ Core Hours & Availability
+To enable real-time collaboration, we ask employees to:
+ * Be available between 10 AM - 3 PM (local time) for team meetings and collaboration
+ * Clearly communicate working hours in calendars and status tools
+ * Notify your manager and team if your availability changes
+ *
+ Expectations for Hybrid Employees
+Hybrid employees are expected to:
+ * Work in-office at least 2 days per week (or as per team agreement)
+ * Attend in-person team meetings, planning sessions, and events
+ * Follow health and safety protocols while in office
+Managers may adjust hybrid schedules based on business needs.
+ *
+ Tools & Technology
+We ensure remote and hybrid employees have access to:
+ * Company-issued laptop
+ * Noise-canceling headset
+ * VPN and collaboration tools (Slack, Zoom, Jira, Confluence, Miro)
+ * Ergonomic support stipend ($500 one-time)
+> Contact [it-support@yourcompany.com](mailto:it-support@yourcompany.com) for
+> any issues.
+ *
+ Communication Best Practices
+ * Use Slack for quick updates and async conversations
+ * Use Zoom for meetings with clear agendas
+ * Maintain visibility with weekly standups and status reports
+ * Update Confluence pages regularly for knowledge sharing
+ *
+ ‍️ Well-Being & Boundaries
+Remote and hybrid work can blur work-life boundaries. Please:
+ * Respect working hours -- avoid messaging after hours unless urgent
+ * Take scheduled breaks and lunch hours
+ * Use vacation and sick time as needed (refer to Time Off Policy)
+We also offer access to mental health support , wellness programs, and
+virtual fitness classes.
+ *
+ Office Space Guidelines (for hybrid workers)
+ * Reserve desks using the Workplace App
+ * Follow capacity limits and health protocols
+ * Be mindful of shared spaces and noise levels
+ *
+ Performance & Feedback
+All employees -- remote, hybrid, or in-office -- are held to the same
+performance standards. Performance reviews, feedback cycles, and career growth
+processes apply equally across all work modes.
+ *
+ Frequently Asked Questions
+Q: Can I temporarily work from another city or country?
+Requests are considered case-by-case. Please consult HR before making travel
+plans.
+Q: What happens if I move to a different region?
+Notify HR in advance -- it may impact your compensation, tax reporting, or
+eligibility for remote work.
+Q: How is culture maintained in a remote environment?
+We prioritize inclusive events (virtual and in-person), regular check-ins, and
+async collaboration to foster belonging.
+ *
+ Resources
+ * Remote Work Agreement Form
+ * Home Office Setup Checklist
+ * Virtual Meeting Best Practices
+ * IT Equipment Request Form

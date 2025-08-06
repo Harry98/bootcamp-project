@@ -1,0 +1,102 @@
+Title of the page is Performance & Career Growth 
+ 
+ Page Created by: Johnson Zhuang
+ Page Last edited by: Johnson Zhuang
+ and markdown of the page is 
+ At Omers, we believe employee growth drives company success. This page
+outlines our approach to performance management, feedback, and career
+development -- empowering you to do your best work and build a fulfilling
+career.
+> Last Updated : July 24, 2025
+> Need Help? Contact [hr@yourcompany.com](mailto:hr@yourcompany.com)
+ *
+ Our Philosophy
+ * Clarity : Everyone should know what's expected of them and how success is measured.
+ * Consistency : All employees go through the same performance cycle and feedback mechanisms.
+ * Development : Growth is not only vertical. We support lateral moves, skill development, and exploration.
+ * Recognition : We celebrate contributions and reward high performance.
+ *
+ Performance Management Cycle
+Phase| Timeline| Key Activities 
+---|---|--- 
+Goal Setting| January / Onboarding| Set SMART goals aligned with team and
+company OKRs 
+Mid-Year Review| June-July| Self-assessment, manager check-in, course
+correction 
+Year-End Review| November-December| Self and manager review, calibration,
+career discussion 
+Ongoing Feedback| All year| Continuous 1:1s, coaching, recognition, and
+real-time feedback 
+ 
+ *
+ Goal Setting & OKRs
+We use Objectives and Key Results (OKRs) to align individual goals with
+team and company-wide priorities.
+> Tip: Set 3-5 goals per cycle. Each goal should be Specific, Measurable,
+> Achievable, Relevant, Time-bound (SMART).
+ *
+ Feedback Culture
+ * Real-time : We encourage timely praise and constructive feedback.
+ * 360-Degree Reviews : Peer, self, and manager feedback collected at key points.
+ * Tools : Use [Lattice]/[Workday]/[Kudos app] to give/receive public and private feedback.
+ *
+ 1:1s With Your Manager
+Regular check-ins should include:
+ * Progress toward goals
+ * Roadblocks or support needed
+ * Feedback in both directions
+ * Career aspirations and skill development
+Recommended frequency: Biweekly or Monthly
+ *
+ Career Development Pathways
+We support growth through:
+ Internal Mobility
+Employees are encouraged to explore new roles across departments after 12
+months in their current position.
+ Career Ladders
+Each department has defined levels with expectations and competencies. Ask
+your People Partner for the ladder relevant to your role.
+ Stretch Assignments
+Take on projects outside your usual responsibilities to build new skills.
+ Mentorship Programs
+Formal and informal mentorships are available. Ask HR about our annual
+mentorship cohort.
+ *
+ Calibration & Promotions
+ * Managers and HR calibrate reviews across teams for fairness.
+ * Promotion decisions are based on:
+ * Performance rating
+ * Skills and competencies
+ * Business need
+ * Time in role is a consideration, not a requirement
+> Ask your manager for our Promotion Guidelines Deck.
+ *
+ Recognition & Rewards
+ * Spot Bonuses for outstanding performance on critical projects.
+ * Quarterly Recognition via company town halls or peer-nominated awards.
+ * Milestone Celebrations for work anniversaries, certifications, or major wins.
+ *
+ Performance Ratings (Example)
+Rating| Meaning| Typical Outcomes 
+---|---|--- 
+ Exceeds| Goes above and beyond consistently| Promotion potential, bonus
+eligibility 
+ Meets| Consistently meets expectations| Solid contributor 
+️ Needs Dev.| Gaps in execution or behavior| Performance plan, more coaching 
+ 
+ *
+ Frequently Asked Questions
+Q: How often do I get reviewed?
+Formally twice a year, with ongoing feedback all year round.
+Q: Can I request a career conversation outside of reviews?
+Absolutely -- speak to your manager or People Partner any time.
+Q: How do I know I 'm ready for promotion?
+Check the career framework, gather feedback, and discuss readiness with your
+manager.
+ *
+ Resources
+ * Goal Setting Template
+ * Career Ladder by Role
+ * Feedback Best Practices Guide
+ * Internal Job Board
+ *

@@ -1,0 +1,42 @@
+Title of the page is Service Mesh & API Management 
+ 
+ Page Created by: Harkanwal Grewal
+ Page Last edited by: Harkanwal Grewal
+ and markdown of the page is 
+ ## API Gateway & Service Communication
+Last Updated: July 25, 2025 
+Owner: API Platform Team 
+SLA: 99.9% availability
+API Gateway Configuration
+Platform: Kong Enterprise 3.3.0 
+Instance Type: c5.xlarge (4 instances across 2 AZ) 
+Peak RPS: 12,847 requests/second 
+Average Response Time: 23ms
+Public API Endpoints
+Internal Service Communication
+Service Discovery: Kubernetes DNS + Consul Connect 
+Load Balancing: Round Robin with health checks 
+Circuit Breaker: Hystrix pattern (5 failures -> 30s open)
+yaml
+Message Broker Configuration
+Platform: Apache Kafka 3.4.0 
+Cluster Size: 9 brokers (m5.xlarge) 
+Replication Factor: 3 
+Message Throughput: 450K messages/minute
+Kafka Topics Configuration
+API Performance Metrics
+Response Time Percentiles (Last 24h)
+ * P50: 45ms
+ * P95: 180ms
+ * P99: 420ms
+ * P99.9: 1,200ms
+Error Rates by Endpoint
+Security Implementation
+API Key Management:
+ * Active Keys: 1,247 (partners & internal)
+ * Key Rotation: Every 90 days
+ * Revoked Keys (YTD): 43
+OAuth2 Flow:
+ * Token Expiry: Access (15min), Refresh (24h)
+ * Active Sessions: 89,450
+ * Token Revocations/Day: 156

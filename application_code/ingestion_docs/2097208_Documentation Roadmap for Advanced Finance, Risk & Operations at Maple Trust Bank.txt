@@ -1,0 +1,124 @@
+Title of the page is Documentation Roadmap for Advanced Finance, Risk & Operations at Maple Trust Bank 
+ 
+ Page Created by: Kartik Sharma
+ Page Last edited by: Kartik Sharma
+ and markdown of the page is 
+ ## 1\. Quick‐Links Directory
+Use _Ctrl + Click_ (or _Cmd + Click_ on macOS) to open placeholders in new
+tabs once pages are created.
+| Page Title| SME / Team| Status 
+---|---|---|--- 
+1| Risk‐Weighted Asset Methodology| Credit Risk & Basel Compliance| Draft 
+2| Treasury & Liquidity Playbook| Treasury / ALM| Draft 
+3| Market‐Risk Limits & VaR Models| Trading Risk| Draft 
+4| Capital Planning & ICAAP| Enterprise Risk| Draft 
+5| Regulatory Change Tracker| Compliance| Draft 
+6| Cybersecurity & Data‐Privacy Controls| InfoSec / Privacy| Draft 
+7| Model Inventory & Validation Schedule| Model Risk| Draft 
+8| Operational‐Risk Loss Database| OpRisk| Draft 
+9| Deposit Pricing Strategy| Retail Deposits| Draft 
+10| Green & Sustainable Finance Framework| ESG Office| Draft 
+11| API & Integration Portal| Digital Banking| Draft 
+12| Customer Onboarding Workflow| Retail Ops / KYC| Draft 
+13| Branch & ATM Optimization Dashboard| Channel Strategy| Draft 
+ 
+ *
+2\. Detailed Descriptions
+Purpose 
+Document PD/LGD/EAD grids, correlation matrices, and Pillar 1 vs Pillar 2
+add‐ons to ensure transparent RWA calculations.
+Key Sections
+ * Basel framework overview
+ * Calculation logic & equations
+ * Data sources & quality controls
+ * Model performance KPIs
+ * Update frequency & governance
+Owner: Credit Risk Analytics
+ *
+ * Funding stack (capital markets vs deposits)
+ * Liquidity buffer targets (LCR ≥ 105 %, NSFR ≥ 110 %)
+ * Stressed cash‐flow projections
+ * Contingency funding plan & triggers
+ _Owner:_ Treasury / ALM
+ *
+ * Trading‐book limit matrix and hierarchy
+ * Historical / Monte‐Carlo VaR & Expected Shortfall methods
+ * Back‐testing and exception handling workflow
+ _Owner:_ Market Risk Management
+ *
+ * Scenario design (macro, idiosyncratic, reverse)
+ * Capital waterfall & buffers (CET1, AT1, Tier 2)
+ * Management action catalogue
+ _Owner:_ Enterprise Risk & Capital Strategy
+ *
+ * OSFI & Basel bulletins timeline
+ * Impact assessment matrix (people, process, tech)
+ * Implementation tasks & owners
+ _Owner:_ Regulatory Compliance
+ *
+ * CIS control mapping
+ * PIPEDA & GDPR obligations
+ * Incident‐response runbooks and RACI
+ _Owner:_ Information Security & Privacy Office
+ *
+ * Master list of all risk/finance models
+ * Materiality tiers & validation cadence
+ * Upcoming review calendar
+ _Owner:_ Model Risk Management
+ *
+ * Internal loss event log & taxonomy
+ * Root‐cause analyses & remediation actions
+ * Key Risk Indicators (KRIs) dashboard
+ _Owner:_ Operational Risk
+ *
+ * Funds‐transfer pricing credits
+ * Competitor rate benchmarking
+ * Elasticity & attrition curves
+ * Promo campaign playbook
+ _Owner:_ Retail Deposits Product Team
+ *
+ * Eligible asset taxonomy (e.g., EV loans, green buildings)
+ * Impact KPIs & reporting templates
+ * Second‐party opinion/assurance process
+ _Owner:_ ESG & Sustainable Finance Office
+ *
+ * OAuth 2.0 / OpenID flows
+ * Endpoint specs (accounts, payments, FX)
+ * Sandbox credentials & test data
+ _Owner:_ Digital Banking Technology
+ *
+ * End‐to‐end KYC/KYB process maps
+ * Screening & adverse‐media tools
+ * Turnaround time (TAT) SLAs and exceptions queue
+ _Owner:_ Retail Operations & AML
+ *
+ * Foot‐traffic heat maps
+ * Cash utilization metrics
+ * Closure/expansion thresholds and decision rules
+ _Owner:_ Channel Strategy & Analytics
+ *
+3\. ️ Implementation Steps
+ 1. Confirm Owners: Each team assigns a page steward.
+ 2. Create Page Templates: Use the _Finance -Risk Template Pack_ for consistent look & feel.
+ 3. Populate MVP Content: At minimum, include purpose statement, outline, and "Next Steps" section.
+ 4. Link Back Here: Add a backlink to this roadmap on every new page.
+ 5. Review Cycle: Quarterly refresh via Content Committee.
+ *
+4\. ️ Quarterly Content Timeline
+Quarter| Pages to Finalize| Review Lead 
+---|---|--- 
+Q3 2025| 1, 2, 5| CFO Office 
+Q4 2025| 3, 4, 6, 7| CRO Office 
+Q1 2026| 8, 9, 10| COO Office 
+Q2 2026| 11, 12, 13| CIO Office 
+ 
+ *
+5\. Governance & Access
+ * Pages restricted to Finance‐Risk space; edit rights limited to page owners.
+ * Versioning: Enable _Page History_ and mandatory change comments.
+ * Annual audit by Internal Audit to verify content accuracy and ownership.
+ *
+> _For questions or to suggest additional documentation,
+> contactconfluence‐_[
+> _admin@mapletrustbank.ca_](mailto:admin@mapletrustbank.ca) _or raise a
+> ticket in the "Knowledge Management" Jira project._

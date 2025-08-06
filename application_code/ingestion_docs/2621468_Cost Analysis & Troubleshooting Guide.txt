@@ -1,0 +1,39 @@
+Title of the page is Cost Analysis & Troubleshooting Guide 
+ 
+ Page Created by: Harkanwal Grewal
+ Page Last edited by: Harkanwal Grewal
+ and markdown of the page is 
+ ## Production Cost Analysis & Operations Guide
+Last Updated: July 25, 2025 
+Owner: FinOps & SRE Teams 
+Review Cycle: Monthly cost optimization
+Monthly Cost Breakdown (July 2025)
+Total Infrastructure Cost: $47,247
+Cost Per Transaction Analysis
+ * Total Monthly Transactions: 69.2M
+ * Cost Per Transaction: $0.000683
+ * Target Cost Per Transaction: $0.000700
+ * Cost Efficiency: 97.6% (↗️ +2.1% vs last month)
+Service-Level Cost Attribution
+| Service Name | Instance Cost | Storage 
+Common Issues & Troubleshooting Guide
+Issue #1: Login failures with 401 errors
+ * Root Cause: Expired JWT token
+ * Fix: Regenerate token via /auth/refresh
+Issue #2: Kafka message delays
+ * Root Cause: Consumer lag due to unscaled workers
+ * Fix: Auto-scale consumer pods or clear backlogs
+Issue #3: API Gateway returns 502
+ * Root Cause: Downstream service crashed or timed out
+ * Fix: Check pod status, review Datadog logs
+Cost Estimate:
+ * Monthly AWS Cost Estimate: ~$42,000 USD
+ * EKS + compute: $18,000
+ * RDS PostgreSQL: $9,500
+ * Storage: $3,500
+ * Network/ELB: $6,000
+ * Logging/Monitoring: $5,000
+Best Practices:
+ * Rotate credentials every 90 days
+ * Validate all input at API layer
+ * Use versioned API endpoints (`v1`, `v2`) for backward compatibility

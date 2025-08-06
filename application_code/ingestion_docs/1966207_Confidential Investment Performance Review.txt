@@ -1,0 +1,97 @@
+Title of the page is Confidential Investment Performance Review 
+ 
+ Page Created by: Kartik Sharma
+ Page Last edited by: Kartik Sharma
+ and markdown of the page is 
+ *
+Maple Trust Bank - Treasury & Investments Group
+> Security Level: _Strictly Internal - Executive Access Only_ 
+> Redistribution or external disclosure is prohibited without written
+> authorization from both the Chief Investment Officer (CIO) and the Chief
+> Risk Officer (CRO).
+ *
+1\. ️ Executive Snapshot
+ * Investment Mandate: Preserve capital, deliver risk‐adjusted returns in line with the Asset-Liability Committee (ALCO) target of 3‐yr rolling RoRWA ≥ 1.2 %.
+ * 2023 Drawdown: - 5.8 % total return driven by equity beta exposure and widening credit spreads.
+ * 2024 -H1 2025 Rebound: \+ 11.6 % cumulative return following coordinated government stimulus, rapid duration switch, and tactical sector rotation.
+ *
+2\. Strategic Asset Allocation (SAA)
+Asset Class| Target Weight| Q2 2023 Weight| Q2 2025 Weight 
+---|---|---|--- 
+Public Equities (Global)| 30 %| 34 %| 28 % 
+Investment‐Grade Credit| 25 %| 22 %| 27 % 
+Government Bonds (5‐12 yr)| 15 %| 12 %| 18 % 
+Short‐Duration / Cash| 10 %| 8 %| 6 % 
+Alternatives (Infra, PE secondaries)| 12 %| 12 %| 12 % 
+Strategic Trades / Overlays| 8 %| 12 %| 9 % 
+ 
+> Rebalancing Discipline: +/- 3 % bands; deviations require CIO sign‐off.
+ *
+3\. Performance Timeline
+Period| Gross Return| Excess vs. Benchmark*| Key Attribution 
+---|---|---|--- 
+FY 2023| - 5.8 %| - 620 bp| Equity beta (-310 bp), HY credit (-190 bp),
+alternatives MTM lag (-120 bp) 
+H1 2024| \+ 4.2 %| \+ 150 bp| Gov't bond rally, tactical 2s10s steepener,
+USD‐CAD FX hedge 
+H2 2024| \+ 5.9 %| \+ 280 bp| Equity sector rotation to Industrials &
+Tech, CDS compression 
+H1 2025| \+ 1.1 %| \+ 30 bp| Harvested gains; shifted to IG credit,
+trimmed equity beta 
+ 
+*Composite of MSCI ACWI (30 %), Bloomberg Agg (40 %), FTSE Canada 91‐Day T‐Bill (10 %), Cambridge PE Secondaries (20 %).
+ *
+4\. ️ Government Intervention & Market Impact
+ 1. April 2024 Fiscal Stimulus
+ * C$45 B infrastructure package -> uplift in construction & industrial equities.
+ * Corporate tax credit on green CAPEX -> accelerated cash flows for renewable issuers.
+ 2. Monetary Pivot (BoC, June 2024)
+ * Policy rate cut: 175 bp cumulative.
+ * MPR forward‐guidance anchored long yields; IG spreads tightened ~40 bp.
+ 3. Liquidity Backstop Program
+ * 3‐month term repo at OIS + 10 bp; allowed de‐levering without forced‐sale discounts.
+_Investment Desk Response:_
+ * Added C$650 MM 7‐ to 10‐year GoC bonds pre‐cut (duration +1.4 yrs).
+ * Rolled equity factor tilt from Value to Quality & Momentum ahead of fiscal boost.
+ * Closed 65 % of high‐beta HY positions; entered IG financials (20 bp pick‐up vs GoC).
+ *
+5\. Recovery Playbook Highlights
+Action| Timeline| P&L Impact 
+---|---|--- 
+Duration Extension (+1-3 yrs)| Feb-May 2024| \+ 1.9 % 
+Sector Rotation (Industrials, Tech)| Apr-Nov 2024| \+ 2.6 % 
+Overlay - CAD Payer Swaps (hedge)| Aug 2024-Feb 2025| - 0.4 % (insurance) 
+Private Credit Add‐On (floating‐rate)| Oct 2024| \+ 0.7 % 
+FX Collar (USD‐CAD)| Continuous| \+ 0.3 % 
+ 
+Total rebound attribution ≈ \+ 5.1 % to June 2025.
+ *
+6\. Risk Metrics (Q2 2025)
+Metric| Level| Limit| Utilisation 
+---|---|---|--- 
+1‐Day 99 % Portfolio VaR| C$28 MM| C$40 MM| 70 % 
+Stress Loss (COVID‐19 Redux)| - C$195 MM| - C$250 MM| 78 % 
+Liquidity Horizon ≤ 7 days| 92 % of assets| ≥ 85 %| 
+Counterparty WWR* Exposure| C$14 MM| C$25 MM| 56 % 
+ 
+*Wrong‐Way Risk under CSA scenarios.
+ *
+7\. ️ Lessons & Controls Strengthening
+ 1. Faster Beta‐Reduction Protocol - Automated triggers when 3‐month realised volatility breaches +2 σ vs 5‐yr mean.
+ 2. Liquidity "Traffic‐Light" Dashboard - Real‐time tagging of assets by Fed/BIS LCR buckets.
+ 3. Governance: CIO investment committee minutes now archived in Model Inventory workspace for audit traceability.
+ *
+8\. ️ Next Steps
+Task| Owner| Due 
+---|---|--- 
+Re‐validate Equity‐Factor Model (v3.2)| Quant Research| Sep 30 2025 
+Private‐Markets Vintage Pacing Plan| CIO Office| Oct 15 2025 
+Annual Strategic Asset Allocation Review| ALCO| Nov 20 2025 
+ 
+ *
+Confidentiality Reminder
+All data, positions, and strategies contained herein are proprietary to Maple
+Trust Bank. Unauthorized forwarding, printing, or screen‐capturing of this
+page is a violation of the Information Security Policy (ISP‐07) and may
+lead to disciplinary action.
+ *

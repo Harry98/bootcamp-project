@@ -1,0 +1,30 @@
+Title of the page is Network Architecture & Security 
+ 
+ Page Created by: Harkanwal Grewal
+ Page Last edited by: Harkanwal Grewal
+ and markdown of the page is 
+ ## Network Infrastructure Design
+Last Updated: July 24, 2025 
+Owner: Network Security Team 
+Classification: Confidential
+VPC Architecture
+Primary Region: us-east-1 (N. Virginia) 
+DR Region: us-west-2 (Oregon) 
+Total Bandwidth: 50 Gbps dedicated
+Network Segmentation
+Security Groups Configuration
+Web Tier Security Group (sg-web-tier-001)
+Application Tier Security Group (sg-app-tier-001)
+Internal DNS Resolution
+Domain: bank.internal 
+DNS Server: Route53 Resolver (10.0.0.2)
+Network Performance Metrics
+Firewall Rules (AWS WAF)
+Rule Priority Order:
+ 1. Rate Limiting: 100 requests/minute per IP
+ 2. Geo Blocking: Block traffic from high-risk countries
+ 3. SQL Injection Protection: OWASP Core Rule Set
+ 4. XSS Protection: Custom regex patterns
+ 5. Known Bad IPs: Threat intelligence feed (updated hourly)
+Blocked Requests (Last 30 days): 147,293 requests 
+Top Block Reason: Rate limiting (67%)

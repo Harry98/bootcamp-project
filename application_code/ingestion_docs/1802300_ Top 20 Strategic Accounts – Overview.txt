@@ -1,0 +1,71 @@
+Title of the page is Top 20 Strategic Accounts – Overview 
+ 
+ Page Created by: Chris Harper
+ Page Last edited by: Chris Harper
+ and markdown of the page is 
+ Owner: Raul Singh, Director of Strategic Accounts 
+Last Updated: July 1, 2025 
+Status: Active
+ *
+Purpose
+This page highlights the top 20 revenue-driving and high-potential
+accounts across regions. These customers are critical to retention, upsell,
+and long-term growth strategies. Use this as a reference for account planning,
+QBR prep, and cross-functional alignment.
+ *
+Account Summary Snapshot
+Metric| Value 
+---|--- 
+Total ARR (Top 20)| $18.6M 
+Average ARR| $930K 
+Expansion Potential| $7.2M 
+Avg. Relationship Length| 3.4 years 
+NPS Avg (Top 20)| 64 
+ 
+ *
+️ Account List
+| Account Name| AE| AM| Region| ARR| Status| Next QBR 
+---|---|---|---|---|---|---|--- 
+1| GreenCo| A. Rivera| S. Patel| West| $1.2M| Expanding| Aug 15 
+2| NovaHealth| C. Lam| T. Morgan| East| $980K| Stable| Sept 2 
+3| Flexitron| J. Bell| A. Kapoor| West| $1.5M| At Risk| July 26 
+4| UrbanEdge| K. Yu| P. Alvarez| Central| $870K| Healthy| Aug 9 
+5| Voltix Systems| M. Lee| K. Quinn| West| $1.1M| Expanding| Sept 5 
+...| ...| ...| ...| ...| ...| ...| ... 
+ 
+ Download Full Account Tracker (Excel)
+ *
+Sample Account Profile - GreenCo
+Overview: 
+Global logistics platform. Customer since 2021. Strong engagement, expanded
+twice in last 18 months.
+ARR: $1.2M 
+Primary Contact: Jordan Sloan, VP of Ops 
+Health Score: 89 (Gainsight) 
+Open Opportunities:
+ * Q3: AI Analytics Add-on ($250K)
+ * Q4: Additional 200 seats for EMEA team
+Risks/Flags:
+ * Pending IT approval for Q3 add-on
+ * No activity from CFO in last 60 days
+Next QBR: Aug 15 - Account team prepping custom adoption insights.
+ *
+Key Account Priorities (Q3 2025)
+ 1. Upsell AI Modules - Target 6 accounts with pilot-ready orgs
+ 2. Multi-region Expansion - Focus on Flexitron, GreenCo, Voltix
+ 3. Churn Risk Mitigation - Intervention plans in place for 3 accounts flagged as "at risk"
+ 4. CSAT Boosting - Improve onboarding experience for Tier 1 clients
+ *
+Cross-Functional Collaboration
+Department| Touchpoint 
+---|--- 
+Product| Custom roadmap briefings for top 5 clients 
+Marketing| Executive content + use case stories 
+Customer Success| QBRs, renewals, day-to-day support 
+RevOps| Expansion forecast modeling 
+ 
+ *
+How to Contribute
+If you're engaging with one of these accounts, please log notes in Salesforce
+under the Strategic Account Notes section, or notify the account team via
+#key-accounts Slack channel.

@@ -1,0 +1,87 @@
+Title of the page is Personal Banking - Account Portolio 
+ 
+ Page Created by: Kartik Sharma
+ Page Last edited by: Kartik Sharma
+ and markdown of the page is 
+ ## 1\. Overview
+Our Personal Banking portfolio is designed to support customers at every life
+stage--from students opening their first chequing account to retirees
+optimising their savings. This page outlines the core account categories, key
+features, eligibility, and pricing guidelines.
+ *
+2\. Account Types at a Glance
+Account Category| Example Products| Key Features| Ideal For| Monthly Fee1 
+---|---|---|---|--- 
+Chequing| Everyday Chequing • Unlimited Chequing| Unlimited Interac
+e‐Transfers, debit purchases, mobile cheque deposit| Day‐to‐day spending|
+$0-$16.95 
+Savings| High‐Interest e‐Savings • Flex‐Save| Tiered interest, no minimum
+balance, automated sweep from chequing| Building short‐term savings| $0 
+Youth & Student| Student Chequing • Youth Savings| No monthly fee, four
+Interac e‐Transfers/day, credit‐builder option| Ages 13‐24; full‐time
+students| $0 
+Senior| Golden Years Chequing| Free paper statements, preferential FX
+spread, 25 % off safety‐deposit boxes| Age 60 +| $4.95 (waived with $2,500
+balance) 
+Tax‐Advantaged| TFSA Savings • RRSP Daily Interest| Tax‐free growth
+(TFSA) or tax‐deferred (RRSP), automatic contributions| Long‐term savers,
+retirement planners| $0 
+Premium Bundles| Maple Signature Package| Chequing + high‐rate savings +
+no‐fee credit card; concierge phone line| High‐net‐worth or bundled
+households| $29.95 
+US‐Dollar| USD Chequing • USD Savings| No FX on USD deposits,
+cross‐border debit, competitive wire fees| Frequent U.S. travellers or
+investors| $1.50/transaction or $5.95/mo 
+ 
+1 Indicative fees; see the separate Fees Schedule for full details.
+ *
+3\. Feature Deep Dive
+3.1 Chequing Accounts
+ * Everyday Chequing - 50 free transactions/month, overdraft protection available.
+ * Unlimited Chequing - No transaction cap, complimentary basic cheques, fee waived at ≥ $4,000 balance.
+3.2 Savings Accounts
+ * High‐Interest e‐Savings - Digital‐only; earns a premium rate with no paper statements.
+ * Flex‐Save - Allows one free withdrawal/month without interest penalty.
+3.3 Youth & Student Benefits
+ * Free Interac transactions, cash‐back Student credit card eligibility, and textbook financing line up to $5,000.
+3.4 Senior Privileges
+ * Reduced fees on domestic wires, dedicated call‐centre queue, and discounted wealth‐planning sessions.
+3.5 Tax‐Advantaged Options
+ * TFSA Savings - Daily interest, contribution tracker, in‐app alerts when nearing annual limit.
+ * RRSP Daily Interest - Flexible cash park for short gaps between contribution and investment purchase.
+ *
+4\. Account Add‐Ons
+Service| Description| Fee 
+---|---|--- 
+Debit Card with Tap‐to‐Pay| Contactless up to $250/txn, global ATM access via
+partner network| $0 
+Overdraft Protection| Linked line of credit; interest only on negative
+balance| Prime + 4 % 
+Safety‐Deposit Box| Small, Medium, Large sizes| From $60 per year 
+Bank Drafts & Certified Cheques| Domestic CAD drafts| $7.50 per item (waived
+for Premium) 
+ 
+ *
+5\. Digital Banking Highlights
+ * 24/7 mobile and online banking with biometric login.
+ * Real‐time spending insights and budgeting widgets.
+ * Interac e‐Transfer Autodeposit and Request Money.
+ * E‐statement archive (up to seven years) and CSV export for tax software.
+ *
+6\. How Personal Accounts Drive Value
+For Customers| For Maple Trust Bank 
+---|--- 
+Safe, convenient money management| Stable low‐cost deposit base 
+Competitive savings rates| Cross‐sell opportunities (lending, investments) 
+Budgeting and credit‐building tools| Deeper data for personalised offers 
+Fee waivers for balance or bundle| Higher share‐of‐wallet and loyalty 
+ 
+ *
+7\. Documentation & Next Steps
+ * Opening Requirements: Two pieces of government‐issued ID and SIN (if interest‐earning).
+ * Switch Kit: Pre‐filled forms to move pre‐authorised debits and payroll.
+ * Account Comparison Sheet: Contact branch staff for the latest printable leaflet.
+ *
+Internal Notes
+ * Product managers should update interest tiers and fee ranges each quarter.
+ * Compliance review of marketing language occurs annually or when regulatory changes arise.

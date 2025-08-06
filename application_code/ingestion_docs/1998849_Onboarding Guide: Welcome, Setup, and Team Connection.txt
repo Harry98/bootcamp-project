@@ -1,0 +1,123 @@
+Title of the page is Onboarding Guide: Welcome, Setup, and Team Connection 
+ 
+ Page Created by: Johnson Zhuang
+ Page Last edited by: Johnson Zhuang
+ and markdown of the page is 
+ # Welcome to Omers -- Employee Onboarding Guide
+We're thrilled to have you join the team! This onboarding guide is designed to
+help you integrate smoothly into our company culture, understand the tools and
+resources you'll be using, and know what to expect in your first 90 days.
+Whether you're working remotely, in the office, or hybrid -- this is your one-
+stop resource to get started.
+> ️ Last Updated : July 24, 2025
+> Questions? Contact us anytime at
+> [hr@yourcompany.com](mailto:hr@yourcompany.com)
+ *
+ Overview of the Onboarding Process
+The onboarding process spans your first 90 days and is structured in 3
+phases:
+ 1. Initial Orientation (Week 1): Set up tools, meet your team, get aligned with company values.
+ 2. Ramp-Up Period (Weeks 2-4): Begin taking on work, understand workflows, and attend training.
+ 3. Full Engagement (Month 2-3): Own responsibilities, start projects, and build connections across teams.
+ *
+ Week 1 Schedule (Sample)
+Day| Focus Area| Activities & Notes 
+---|---|--- 
+Day 1| Welcome & IT Setup| Laptop, VPN, email setup, Slack, HRIS logins 
+Day 2| Orientation Sessions| HR intro, benefits overview, workplace
+policies 
+Day 3| Team Introduction| Meet your team, role expectations, buddy
+assigned 
+Day 4| Tools Deep Dive| Walkthrough of Jira, Confluence, Git, internal
+tools 
+Day 5| Culture & Values| Intro to mission/vision, DEI values, Q&A session 
+ 
+> Tip: Your manager and onboarding buddy will coordinate your first-week
+> activities.
+ *
+ Onboarding Checklist
+Here's a list of things to complete in your first 1-2 weeks:
+Systems & Tools
+ * Set up your laptop and peripherals
+ * Access all core systems: Email, Slack, Confluence, HRIS, VPN
+ * Join your team's shared drive or folder
+ * Set up your calendar and meeting availability
+Company Knowledge
+ * Read the HR Policies & Employee Handbook
+ * Review the Code of Conduct
+ * Complete security training (due within 10 days)
+ * Watch company intro video from the CEO
+Team Integration
+ * Attend 1:1 with your manager
+ * Join your team's daily stand-up (if applicable)
+ * Join key Slack channels: #general, #new-hires, #fun, and your team channel
+ * Get added to your department's Confluence space
+ *
+️ Tools You 'll Use Daily
+Tool| Purpose| Access 
+---|---|--- 
+Email| Communication| email.company.com 
+Slack| Messaging & collaboration| slack.company.com 
+Confluence| Knowledge base & documentation| docs.company.com 
+Jira| Project/task tracking| jira.company.com 
+HRIS| Time off, payroll, documents| hr.company.com 
+Zoom| Meetings & video calls| zoom.company.com 
+ 
+> Contact IT Support: [it@company.com](mailto:it@company.com) if you're
+> missing access to any of these.
+ *
+ Key People to Know
+Name| Role| Contact 
+---|---|--- 
+Jane Smith| HR Business Partner|
+[jane.smith@company.com](mailto:jane.smith@company.com) 
+Alex Johnson| IT Support Lead| [it@company.com](mailto:it@company.com) 
+Emily Tran| Your Onboarding Buddy| Assigned on Day 1 
+[Your Manager]| Team Lead| Assigned by HR 
+ 
+ *
+ What You Should Learn in Your First Month
+Here are key areas of understanding you should build during the onboarding
+period:
+ * The company's mission, values, and customer impact
+ * Your team's goals, OKRs, and operating rhythm
+ * Your role's responsibilities and expectations
+ * The internal tools and processes you'll be using
+ * Security and compliance guidelines
+ * Where to go for help (HR, IT, your manager, buddy)
+ *
+ Your 30 / 60 / 90 Day Plan
+️ First 30 Days
+ * Attend all onboarding sessions
+ * Complete mandatory training
+ * Participate in team meetings and standups
+ * Start contributing to small tasks and shadowing
+️ 31 -60 Days
+ * Begin owning small projects or parts of workflows
+ * Provide feedback on your onboarding experience
+ * Meet with other teams you'll collaborate with
+️ 61 -90 Days
+ * Fully onboarded into your role
+ * Drive progress on assigned projects
+ * Participate in your 90-day review/check-in
+ *
+ Helpful Links
+ * HR Policies & Employee Handbook
+ * Leave & Time Off Guide
+ * Security Training Portal
+ * New Hire FAQ
+ * Company Values & Culture
+ *
+ Common Questions
+What if I 'm missing access to a system?
+-> Email [it@company.com](mailto:it@company.com) for access issues.
+Who should I go to for HR questions?
+-> Contact your assigned HR Business Partner or email [hr@yourcompany.com](mailto:hr@yourcompany.com).
+When will I have my performance check-in?
+-> Your manager will schedule a 90-day review during month 3.
+ *
+ Welcome Again!
+We're thrilled to have you here. Your journey is just beginning, and we can't
+wait to see what you accomplish. Be proactive, ask questions, and don't
+hesitate to reach out.
+Let 's get started!

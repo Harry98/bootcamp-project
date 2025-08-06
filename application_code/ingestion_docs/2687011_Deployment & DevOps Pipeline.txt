@@ -1,0 +1,72 @@
+Title of the page is Deployment & DevOps Pipeline 
+ 
+ Page Created by: Harkanwal Grewal
+ Page Last edited by: Harkanwal Grewal
+ and markdown of the page is 
+ ## CI/CD Pipeline & Release Management
+Last Updated: July 25, 2025 
+Owner: DevOps Engineering Team 
+Pipeline Status: All systems operational
+Deployment Pipeline Overview
+Pipeline Metrics (Last 30 Days)
+Environment Configuration
+Development Environment
+ * Namespace: `banking-dev`
+ * Cluster: `eks-dev-cluster`
+ * Node Count: 6 (t3.medium)
+ * Auto-scaling: 3-12 pods per service
+ * Database: PostgreSQL 14 (db.t3.micro)
+ * Deployments/Day: 35-40
+Staging Environment
+ * Namespace: `banking-staging`
+ * Cluster: `eks-staging-cluster`
+ * Node Count: 12 (c5.large)
+ * Load Testing: Automated with 1000 VU
+ * Database: PostgreSQL 14 (db.r6g.large)
+ * Smoke Tests: 127 test cases (98% pass rate)
+Production Environment
+ * Namespace: `banking-prod`
+ * Cluster: `eks-prod-cluster`
+ * Node Count: 24 (c5.2xlarge)
+ * Deployment Strategy: Blue/Green with canary
+ * Database: PostgreSQL 14 Multi-AZ
+ * Monitoring: 100% coverage, 24/7 alerts
+Build Pipeline Configuration
+GitHub Actions Workflow
+yaml
+Test Coverage by Service
+Release Management
+Release Schedule
+ * Major Releases: Quarterly (Q3 2025: Sep 15)
+ * Minor Releases: Bi-weekly (Next: Aug 8)
+ * Patch Releases: As needed (Last: July 23)
+ * Hotfixes: Emergency only (2 YTD)
+Feature Flag Management
+ * Active Flags: 23
+ * Users in Beta: 12,450 (5% of user base)
+ * Flags Retired (Q2): 8
+ * Rollback via Flags: 3 incidents prevented
+Deployment Windows
+Infrastructure as Code
+Terraform Configuration
+ * Modules: 34 reusable modules
+ * Resources Managed: 1,247 AWS resources
+ * State Files: Remote (S3 + DynamoDB locking)
+ * Plan/Apply Success Rate: 99.1%
+ * Cost Optimization: $8,400 saved/month via rightsizing
+Kubernetes Manifests
+ * Helm Charts: 12 custom charts
+ * ConfigMaps: 45 active configurations
+ * Secrets: 78 managed via External Secrets Operator
+ * RBAC Policies: 23 roles, 67 bindings
+Disaster Recovery
+Backup Strategy
+ * Code Repository: GitHub + GitLab mirror
+ * Container Images: ECR + Harbor registry
+ * Infrastructure Config: Terraform state backup
+ * Database Backups: Cross-region replication
+Recovery Procedures
+ * RTO (Recovery Time Objective): 15 minutes
+ * RPO (Recovery Point Objective): 5 minutes
+ * Last DR Test: July 10, 2025 (Success)
+ * Runbook Updates: Weekly reviews

@@ -1,0 +1,76 @@
+Title of the page is Sales Team Roles & Responsibilities 
+ 
+ Page Created by: Chris Harper
+ Page Last edited by: Chris Harper
+ and markdown of the page is 
+ Owner: Jane Reynolds, VP of Sales 
+Last Updated: July 1, 2025 
+Status: Published
+ *
+Overview
+This page outlines the key roles within the Sales department, including core
+responsibilities, KPIs, and internal collaboration points. This ensures
+clarity on team ownership, cross-functional touchpoints, and accountability.
+ *
+Sales Team Structure
+‍ Role Breakdown
+1\. VP of Sales
+Owner: Jane Reynolds 
+Focus: Strategic leadership, revenue forecasting, cross-functional
+alignment 
+Key Responsibilities:
+ * Set quarterly/annual revenue goals
+ * Align sales with marketing, product, and customer success
+ * Coach and develop sales leaders
+ * Manage performance metrics at org level
+ *
+2\. Sales Directors
+Example: John Tan - Director, SMB Sales 
+Focus: Team execution, performance management, regional strategy 
+Key Responsibilities:
+ * Own team quotas
+ * Drive forecasting and pipeline reviews
+ * Coach AEs & BDRs
+ * Support hiring and onboarding
+ *
+3\. Account Executives (AE)
+Example: Alex Rivera - AE, Mid-Market 
+Focus: Closing deals, full-cycle sales 
+Key Responsibilities:
+ * Manage qualified opportunities to close
+ * Run discovery, demo, and proposal calls
+ * Collaborate with AMs for handoff
+ * Maintain CRM hygiene and forecast accuracy 
+Core KPIs: Closed-won revenue, win rate, average deal size
+ *
+4\. Business Development Reps (BDR)
+Example: Tessa Kim - BDR, Outbound 
+Focus: Prospecting and pipeline generation 
+Key Responsibilities:
+ * Conduct outbound outreach (email, calls, LinkedIn)
+ * Qualify inbound leads
+ * Book discovery meetings for AEs
+ * Log all activity in CRM 
+Core KPIs: Meetings booked, qualified leads, outreach volume
+ *
+5\. Account Managers (AM)
+Example: Raul Singh - AM, Enterprise 
+Focus: Post-sale growth, renewals, customer relationships 
+Key Responsibilities:
+ * Own customer retention and upsell pipeline
+ * Partner with Customer Success on onboarding
+ * Run QBRs and expansion conversations
+ * Identify churn risks 
+Core KPIs: Net revenue retention, upsell rate, customer satisfaction
+ *
+Cross-Functional Collaboration
+Team| Collaboration Touchpoints 
+---|--- 
+Marketing| Campaign feedback, lead quality, personas 
+Product| Feature requests, roadmap insights 
+Customer Success| Onboarding transitions, at-risk accounts 
+Sales Ops| Reporting, quota setting, process improvements 
+ 
+Notes
+ * For internal changes or updates, please notify Sales Enablement.
+ * This page is reviewed at the beginning of each quarter.

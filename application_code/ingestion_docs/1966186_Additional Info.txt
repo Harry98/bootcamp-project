@@ -1,0 +1,24 @@
+Title of the page is Additional Info 
+ 
+ Page Created by: Kartik Sharma
+ Page Last edited by: Kartik Sharma
+ and markdown of the page is 
+ Category| Examples| Where You'll See Them 
+---|---|--- 
+Global regulatory & Basel III terminology| AT1, CET1, Tier 2 Capital, RWA,
+LCR, NSFR, ICAAP, IRRBB, PD/LGD/EAD grids, UL, VaR, Expected Shortfall, Basel
+Pillar 1/2, OSFI (Canada's Basel implementer)| Bank regulatory filings,
+capital‐planning reports, supervisory guidelines, risk‐weighted‐asset models 
+Financial‐management & treasury jargon| ALM, FTP, Yield Curve,
+Funds‐Transfer Pricing, Liquidity Buffer| Asset-liability committees (ALCO),
+balance‐sheet strategy decks 
+Risk‐indicator, ops‐risk & governance lingo| KRI, OpRisk Loss Database,
+RACI, SLA, TAT, Model Inventory, Model Validation| Internal policy documents,
+operational‐risk frameworks, model‐risk management standards 
+Data‐privacy / cybersecurity references| GDPR, PIPEDA, CIS Controls|
+Compliance manuals, cyber‐security control libraries 
+ESG & strategy buzzwords| ESG, MVP (in documentation context), SME
+(subject‐matter expert)| Sustainability disclosures, agile project charters,
+knowledge‐management plans 
+Credit/lending specifics| LGD, EAD, Probability of Default, RAROC,
+KYC/KYB| Credit‐risk scorecards, loan‐pricing engines, AML/KYC procedures

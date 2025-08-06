@@ -1,0 +1,103 @@
+Title of the page is Financial Aspects and Services Overview 
+ 
+ Page Created by: Kartik Sharma
+ Page Last edited by: Kartik Sharma
+ and markdown of the page is 
+ # Maple Trust Bank
+ *
+1\. Introduction
+Maple Trust Bank is a full-service Canadian financial institution offering
+a wide range of personal, business, and digital banking services. With a
+strong national presence, the bank is committed to empowering individuals,
+families, and enterprises with accessible and secure financial solutions.
+ *
+2\. Core Financial Products
+2.1 Personal Banking
+Product| Description 
+---|--- 
+Chequing Accounts| Flexible day-to-day transaction accounts with competitive
+fees and Interac support 
+Savings Accounts| Interest-bearing accounts with tiered rates based on balance
+levels 
+Credit Cards| Options include cashback, travel rewards, and low-interest cards 
+Personal Loans| Fixed or variable rate loans tailored to personal financial
+goals 
+Lines of Credit| Revolving credit lines for flexible borrowing 
+Mortgages| Fixed and variable rate mortgages, including insured and
+conventional plans 
+ 
+2.2 Business Banking
+Product| Description 
+---|--- 
+Business Chequing Accounts| Customized for different volumes and business
+needs 
+Business Loans| Term financing for equipment, growth, or operations 
+Commercial Mortgages| Real estate financing for business use 
+Merchant Services| POS solutions, payment processing, and invoicing support 
+ 
+2.3 Investment & Wealth Management
+Product| Description 
+---|--- 
+RRSP / TFSA / RESP / RDSP| Registered accounts for retirement, savings,
+education, and disabilities 
+Mutual Funds| Professionally managed investment portfolios 
+GICs| Guaranteed returns with fixed-term deposits 
+Financial Advisory Services| Personalized wealth management and planning 
+ 
+ *
+3\. ️ Insurance Products
+Type| Coverage Areas 
+---|--- 
+Life Insurance| Comprehensive term and permanent life coverage options 
+Home & Auto Insurance| Bundled policies, accident protection, and roadside
+services 
+Travel Insurance| Emergency medical, trip cancellation, and baggage protection 
+Credit Protection| Coverage for loan and credit repayments during unforeseen
+events 
+ 
+ *
+4\. Digital Banking Services
+4.1 Online & Mobile Banking
+ * 24/7 access to all accounts and services
+ * Interac e-Transfers, bill payments, e-statements
+ * Mobile cheque deposit
+ * Multi-factor authentication and account alerts
+4.2 Additional Features
+ * Budgeting and goal tracking tools
+ * Real-time investment portfolio insights
+ * Smart chatbot and virtual assistant support
+ *
+5\. Branch & ATM Network
+ * Over 400 branches across all Canadian provinces
+ * 2,000+ ATMs with surcharge-free withdrawals
+ * In-branch advisors for personal and business consultations
+ *
+6\. Fees & Interest Overview
+Service| Typical Fee/Rate 
+---|--- 
+Chequing Account Fee| $0-$16.95/month depending on plan 
+Interac e-Transfer| Free to $1.50 per transfer 
+Credit Card APR| 13.99% - 19.99% 
+GIC Interest (1 Year)| 4.00% 
+Mortgage Rate (5 Year Fixed)| 5.29% 
+ 
+_Fees and rates subject to change._
+ *
+7\. ‍ Customer Support Channels
+ * 24/7 phone support: 1-800-MAPLE-TR
+ * Live chat via mobile and desktop
+ * Bookable appointments with advisors
+ * Accessibility support including TTY, screen readers, and language interpretation
+ *
+8\. Security & Compliance
+ * Adherence to FINTRAC, OSFI, and PIPEDA standards
+ * End-to-end encrypted transactions
+ * Real-time fraud alerts and identity protection
+ * Regular third-party audits and security testing
+ *
+9\. ESG & Community Engagement
+ * Carbon-neutral initiatives and green banking programs
+ * Sponsorship of community outreach and literacy programs
+ * Indigenous banking partnerships and tailored services
+ * Employee volunteerism and charitable giving programs
+ *

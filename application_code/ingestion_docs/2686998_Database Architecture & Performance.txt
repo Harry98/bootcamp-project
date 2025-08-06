@@ -1,0 +1,47 @@
+Title of the page is Database Architecture & Performance 
+ 
+ Page Created by: Harkanwal Grewal
+ Page Last edited by: Harkanwal Grewal
+ and markdown of the page is 
+ ## Data Layer Architecture
+Last Updated: July 23, 2025 
+Owner: Database Engineering Team 
+On-Call: [db-team-primary@bank.com](mailto:db-team-primary@bank.com)
+Database Cluster Configuration
+Primary Database (PostgreSQL 14.8)
+Instance Class: db.r6g.2xlarge (8 vCPU, 64 GB RAM) 
+Storage: 2 TB gp3 (12,000 IOPS provisioned) 
+Multi-AZ: Enabled with synchronous replication 
+Backup Retention: 30 days (automated) + 7 years (compliance)
+Connection Pool Configuration:
+Read Replicas
+Database Schema Overview
+Core Tables
+Indexing Strategy
+High-Performance Indexes:
+sql
+Performance Metrics
+Query Performance (Last 7 days)
+Database Health Metrics
+ * CPU Utilization: 34% (primary), 18% (replicas)
+ * Memory Usage: 78% buffer cache hit ratio
+ * IOPS Usage: 4,200/12,000 (35% utilization)
+ * Connection Usage: 245/500 (49% utilization)
+ * Deadlocks (24h): 3 (auto-resolved)
+Redis Cache Layer
+Cluster Configuration:
+ * Node Type: cache.r6g.large (2 vCPU, 16 GB)
+ * Cluster Size: 6 nodes (3 primary + 3 replica)
+ * Total Memory: 96 GB
+ * Memory Usage: 67 GB (69.8% utilization)
+Cache Hit Ratios by Service
+Backup & Recovery
+Backup Strategy:
+ * Automated Snapshots: Every 6 hours
+ * Transaction Log Shipping: Every 5 minutes
+ * Cross-Region Backup: Daily to us-west-2
+ * Recovery Point Objective (RPO): 5 minutes
+ * Recovery Time Objective (RTO): 15 minutes
+Recent Recovery Tests:
+ * Last Full Recovery Test: July 15, 2025 (Success - 12min RTO)
+ * Point-in-Time Recovery: July 20, 2025 (Success - 8min RTO)

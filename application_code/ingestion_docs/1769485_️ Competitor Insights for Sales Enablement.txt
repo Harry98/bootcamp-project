@@ -1,0 +1,91 @@
+Title of the page is ️ Competitor Insights for Sales Enablement 
+ 
+ Page Created by: Chris Harper
+ Page Last edited by: Chris Harper
+ and markdown of the page is 
+ Owner: Brian Ortega, Sales Enablement Lead 
+Last Updated: July 1, 2025 
+Status: Live
+ *
+Purpose
+This page provides quick, tactical insights on key competitors. Use it to
+understand how we stack up, handle objections confidently, and reinforce our
+differentiators during the sales process.
+ *
+Quick Navigation
+ * Competitor A - Nexora
+ * Competitor B - FlowLogic
+ * Competitor C - RevStack
+ * Talk Tracks & Objection Handling
+ * Battlecards (PDF)
+ *
+Competitor A - Nexora
+Overview: 
+Nexora is a legacy player strong in enterprise markets but known for outdated
+UX.
+Strengths:
+ * Deep customization for large clients
+ * Longstanding industry reputation
+ * Broad partner network
+Weaknesses:
+ * Steep learning curve
+ * Poor mobile experience
+ * Slow release cycles
+Positioning Tips:
+> "While Nexora offers depth, our customers tell us they switched because they
+> needed a more intuitive and agile solution. We release product updates
+> weekly, not quarterly."
+ *
+Competitor B - FlowLogic
+Overview: 
+A startup gaining traction in SMB markets with sleek design and low price.
+Strengths:
+ * Attractive pricing
+ * Simple onboarding
+ * Active user community
+Weaknesses:
+ * Limited scalability
+ * Missing enterprise features (custom roles, API limits)
+ * No phone support
+Positioning Tips:
+> "FlowLogic is great for teams just getting started -- but as you scale,
+> you'll want a platform that grows with you, not one you'll outgrow."
+ *
+Competitor C - RevStack
+Overview: 
+Known for automation features, but often overpromises on integrations.
+Strengths:
+ * Advanced workflow automation
+ * AI-powered reporting
+ * Strong outbound toolset
+Weaknesses:
+ * Integration bugs with Salesforce
+ * Expensive add-ons
+ * Limited support hours
+Positioning Tips:
+> "RevStack talks a big game about automation, but we consistently hear about
+> failed integrations. With us, native Salesforce sync just works -- out of
+> the box."
+ *
+️ Talk Tracks & Objection Handling
+Objection| Response 
+---|--- 
+"We're already using Nexora."| "Totally understand. We've helped many former
+Nexora clients reduce training time by 40% -- would it be worth exploring if
+we could do the same for you?" 
+"FlowLogic is cheaper."| "Absolutely -- and if cost is the only factor,
+they're a great fit. But if ROI and support matter too, let's walk through
+where we deliver more long-term value." 
+"RevStack has better automation."| "They do a lot in theory. We've found that
+teams prefer functionality they can rely on -- especially when it comes to
+clean Salesforce data." 
+ 
+🃏 Battlecards
+ Download individual battlecards:
+ * Nexora Battlecard (PDF)
+ * FlowLogic Battlecard (PDF)
+ * RevStack Battlecard (PDF)
+ *
+Feedback & Updates
+Have new intel? Share it in the #sales-competitive Slack channel or email
+[sales.enablement@fictionalco.com](mailto:sales.enablement@fictionalco.com).

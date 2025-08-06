@@ -1,0 +1,52 @@
+Title of the page is Q3 Sales Strategy & Targets 
+ 
+ Page Created by: Chris Harper
+ Page Last edited by: Chris Harper
+ and markdown of the page is 
+ Owner: Jane Reynolds, VP of Sales 
+Last Updated: July 1, 2025 
+Status: Finalized
+ *
+Overview
+This document outlines the strategic priorities, goals, and key metrics for
+the Sales team in Q3 2025. The primary focus this quarter is pipeline
+acceleration , upselling to existing customers , and expanding into the
+Midwest region.
+ *
+Strategic Priorities (Q3)
+Priority| Description| Owner 
+---|---|--- 
+ 
+ 1. Expand into Midwest territory
+| Hire 2 new reps and grow regional presence by 25%| Regional Sales Director 
+ 
+ 2. Improve pipeline velocity
+| Reduce sales cycle time by 15% through improved qualification| Sales
+Enablement 
+ 
+ 3. Increase customer expansion revenue
+| Focus on upsells and cross-sells in accounts > $50K ARR| Account Managers 
+ 
+ 4. Strengthen CRM hygiene
+| Enforce weekly updates and stage accuracy across team| All Reps + Sales Ops 
+ 
+Key Initiatives
+ * Launch Midwest Expansion Campaign 
+Targeting manufacturing and logistics clients in Illinois, Ohio, and Michigan.
+ * Quarterly Pitch Training 
+Refresher sessions on product positioning and objection handling.
+ * Revamped Demo Workflow 
+New standardized demo templates rolled out in July.
+ * CRM Cleanup Week (July 15 -19) 
+Mandatory opportunity stage reviews for all open deals.
+ *
+Important Dates
+ * July 10: Sales Kickoff Webinar
+ * August 5 -9: Mid-quarter Performance Review
+ * September 20: Q3 Target Check-in & Adjustment
+ * September 30: End of Quarter Wrap-Up
+ *
+Notes & Reminders
+ * Keep your pipeline updated weekly by Friday EOD.
+ * Focus on value selling -- ask about impact, not just features.
+ * Celebrate small wins! Share closed deals in #sales-wins channel.

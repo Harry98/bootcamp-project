@@ -1,0 +1,118 @@
+Title of the page is Advanced Financial Framework 
+ 
+ Page Created by: Kartik Sharma
+ Page Last edited by: Kartik Sharma
+ and markdown of the page is 
+ *
+_Internal Use - Maple Trust Bank Finance & Risk Division_
+> This page consolidates the bank's advanced profitability, risk, and
+> capital‐management methodologies while linking to previously documented
+> pages for easy reference.
+ *
+1\. ️ Page Map & Key References
+Module| Linked Page| Purpose 
+---|---|--- 
+Retail Credit| [Loan Products & Value Creation]| Product‐level pricing,
+customer value, profit math 
+Cards| [Credit Card Offerings]| Revolving exposure modelling, interchange
+dynamics 
+SME & Commercial| [Business Banking Solutions]| Term vs. revolving
+structures, collateral impacts 
+Customer Education| [Financial Literacy & Resources]| Behavioural
+mitigation of credit risk via education 
+ 
+ _(Ctrl‐click any page title to open in a new tab.)_
+ *
+2\. Funds‐Transfer Pricing (FTP) Model
+> FTP aligns business‐unit margins with the bank's actual cost of liquidity
+> and interest‐rate risk.
+2.1 Core Formula
+FTP Ratei,t=rbase,t+Δliquidity,t+ΔIRRBB,t+Δoptionalities,i\text{FTP
+Rate}_{i,t}= r_{\text{base},t} + \Delta_{\text{liquidity},t} +
+\Delta_{\text{IRRBB},t} + \Delta_{\text{optionalities},i}
+Component| Source| Notes 
+---|---|--- 
+rbase,tr_{\text{base},t}| 1‐month CDOR curve| Updated daily by Treasury 
+Δliquidity,t\Delta_{\text{liquidity},t}| Liquidity desk| Cost of maintaining
+LCR ≥ 105 % & NSFR ≥ 110 % 
+ΔIRRBB,t\Delta_{\text{IRRBB},t}| ALM| Interest‐rate risk in the banking book
+shock (±200 bp) 
+Δoptionalities,i\Delta_{\text{optionalities},i}| Product desk| Prepayment,
+drawdown, and conversion options (see _Loan Products_ page) 
+ 
+ *
+3\. Economic Capital Allocation (ECA)
+> Ensures each business line carries its share of unexpected loss (UL) at the
+> bank's 99.9 % confidence level.
+3.1 UL Calculation
+UL=∑j=1nσj2+2 ⁣ ⁣ ⁣∑j≠k ⁣ ⁣ ⁣ρjk σjσk\text{UL} = \sqrt{ \sum_{j=1}^{n}
+\sigma_j^2 + 2 \\!\\!\\!\sum_{j\neq k}\\!\\!\\! \rho_{jk}\,\sigma_j \sigma_k }
+ * σj\sigma_j: standalone volatility of portfolio _j_
+ * ρjk\rho_{jk}: asset‐class correlation from Basel III IRC tables
+Business Unit| Stand‐Alone UL (MM$)| Capital Diversification Benefit| Final
+Allocated Capital 
+---|---|---|--- 
+Retail Loans| 250| 15 %| 212 
+Credit Cards| 140| 10 %| 126 
+Commercial| 310| 18 %| 254 
+Treasury & Trading| 190| 0 %| 190 
+ 
+Allocated capital feeds the RAROC engine:
+RAROC=Net Income after TaxEconomic Capital\text{RAROC}= \frac{\text{Net Income
+after Tax}}{\text{Economic Capital}}
+> Target RAROC: ≥ 15 % to exceed hurdle rate and dividend expectations.
+ *
+4\. Stress‐Testing Workflow
+Step| Scenario Driver| Key Metric Tested| Linked Detail 
+---|---|---|--- 
+1| 300 bp rate shock| Net Interest Income (NII)| FTP & ALM deck 
+2| Unemployment ↑ 5 ppt| PD migration for _Retail Loans_| Formulas on [Loan
+Products & Value Creation] 
+3| Housing prices ↓ 15 %| LGD for mortgages, HELOCs| Collateral tables in
+_Loan Products_ 
+4| Oil price ↓ 35 %| Sector EAD stress (_Commercial_)| Industry slots on
+_Business Banking Solutions_ 
+ 
+Output flows into capital‐planning and ICAAP documentation.
+ *
+5\. Pricing & Profitability Engine (Advanced)
+5.1 Risk‐Adjusted Spread Objective
+Target Spread=FTP Rate+Expected Loss+Opex Load+Target RAROC×Economic
+CapitalEarning Assets\text{Target Spread}= \text{FTP Rate} + \text{Expected
+Loss} + \text{Opex Load} + \text{Target RAROC} \times \frac{\text{Economic
+Capital}}{\text{Earning Assets}}
+ * Expected Loss: PD × LGD × EAD _(PD grids linked to our internal Credit Score Basics article)_
+ * Opex Load: Activity‐based cost allocation (ABC)
+5.2 Example - Small‐Business Term Loan
+Item| Value 
+---|--- 
+FTP Rate| 4.15 % 
+Expected Loss| 0.80 % 
+Opex Load| 0.65 % 
+Capital/Assets| 8 % 
+Target RAROC| 15 % 
+ 
+Target Spread=4.15+0.80+0.65+0.15×0.08=6.02%\text{Target Spread} = 4.15 + 0.80
++ 0.65 + 0.15 \times 0.08 = 6.02\%
+Quoted all‐in fixed rate: 6.05 % (rounding buffer).
+ *
+6\. Performance Dashboard Metrics
+Metric| Threshold| Source Page 
+---|---|--- 
+Net Interest Margin (NIM) ≥ 2.50 %| Formulas cheat‐sheet| _Formulas_ page 
+Cost‐to‐Income Ratio ≤ 48 %| Ops Finance| -- 
+Non‐Performing Loans / Gross Loans ≤ 0.75 %| Credit Risk| _Loan Products_ 
+LCR ≥ 105 %| Treasury| -- 
+CET1 Ratio ≥ 11.0 %| Regulatory Capital| -- 
+ 
+ *
+7\. Governance & Controls
+ * Model Validation: Independent validation team reviews FTP, PD/LGD/EAD, and stress models annually.
+ * Policy Alignment: All assumptions adhere to OSFI Guideline _E‐16_ and Basel III Pillar 2.
+ * Audit Trail: Confluence pages are version‐controlled; key formulas also stored in Model Inventory DB (#FIN‐MODELS).
+ *
+️ Confidential
+For internal financial‐management purposes only. Do not distribute outside
+Maple Trust Bank without CFO approval.
+ *
+_(End of Page)_

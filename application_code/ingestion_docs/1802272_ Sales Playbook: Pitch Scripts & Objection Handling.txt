@@ -1,0 +1,81 @@
+Title of the page is Sales Playbook: Pitch Scripts & Objection Handling 
+ 
+ Page Created by: Chris Harper
+ Page Last edited by: Chris Harper
+ and markdown of the page is 
+ Owner: Brian Ortega, Sales Enablement Lead 
+Last Updated: July 1, 2025 
+Status: Finalized
+ *
+Purpose
+This playbook provides sales-approved messaging for prospecting,
+discovery, demo, and closing stages -- including objection-handling guidance.
+It ensures reps stay on-message and address common concerns confidently.
+ *
+️ Core Pitch Script - 30-Second Elevator Pitch
+> "We help mid-sized teams automate and streamline their sales workflows so
+> they can close more deals, faster -- without the tech headaches. Our
+> platform connects directly with your CRM, scores your pipeline in real time,
+> and lets your reps focus on selling, not spreadsheets."
+ _Use during cold outreach, intro calls, and networking events._
+ *
+️ Cold Email Script (Outbound Prospecting)
+Subject: Quick idea for [Company]'s sales team 
+Body:
+> Hi [First Name],
+>
+> I work with companies like [Client A] and [Client B] to help their sales
+> teams shorten deal cycles and improve forecast accuracy. Based on what I saw
+> about [Company], I think we could help you do the same.
+>
+> Open to a quick 15-minute call this week to explore?
+ Tip: Personalize the second sentence with a recent company news item or
+role-specific insight.
+ *
+️ Discovery Call Talk Track
+ 1. Rapport : "Thanks for taking the time today -- how familiar are you with what we do?"
+ 2. Pain Discovery : "What's currently slowing down your team when it comes to sales execution?"
+ 3. Impact Framing : "If you could solve that tomorrow, what would it change for the team?"
+ 4. Qualification : Budget, authority, need, timeline (BANT)
+ 5. Next Steps : Schedule demo or proposal
+ *
+Demo Script Highlights
+Introduction (2 min)
+> "Today I'll walk you through how we help sales teams like yours increase
+> productivity and win rates."
+Product Hook (5 -7 min)
+ * Show real-time pipeline scoring
+ * Highlight Salesforce/HubSpot integration
+ * Share customer success story
+Close Out (2 min)
+> "Is this the kind of functionality that would be helpful for your team?
+> Should we explore pricing next?"
+ *
+Common Objections & How to Handle Them
+Objection| Response 
+---|--- 
+"We're already using another tool."| "That's great -- many of our customers
+were too. They found switching helped reduce reporting time by 40% and
+improved rep adoption." 
+"We don't have budget right now."| "Totally understand. Just to help plan
+ahead, when do budget reviews typically happen on your side?" 
+"Let me check with my manager."| "Of course. Would it help if we set up a
+follow-up with both of you next week?" 
+"We're too small for this."| "A lot of our customers said the same -- and now
+they're glad they started early. Growth-stage teams benefit the most from
+streamlined sales ops." 
+ 
+ *
+Objection Handling Framework - Feel, Felt, Found
+> "I totally understand how you feel. Others have felt the same way at first.
+> But what they found was that [insert success outcome]."
+ *
+Downloads & Tools
+ * Full Pitch Deck - Sales Version (PDF)
+ * Live Demo Checklist (Notion)
+ * Objection Flashcards - Printable
+ *
+Feedback & Updates
+Have a great pitch line or new objection to add? Drop it in the #sales-
+playbook-feedback Slack channel or email
+[enablement@fictionalco.com](mailto:enablement@fictionalco.com).

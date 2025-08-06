@@ -1,0 +1,127 @@
+Title of the page is Capital Markets Overview 
+ 
+ Page Created by: Kartik Sharma
+ Page Last edited by: Kartik Sharma
+ and markdown of the page is 
+ *
+Maple Trust Bank - Internal Reference
+> This page summarizes the structure, revenue drivers, and risk‐management
+> framework of Maple Trust Bank's Capital Markets division. Use it as a
+> central resource when drafting desk manuals, control procedures, or
+> management reports.
+ *
+1\. Mandate & Scope
+The Capital Markets group provides market‐making, underwriting, sales &
+trading, and risk‐management solutions to institutional, corporate, and
+government clients--complementing the bank's retail and commercial franchises.
+Activities span:
+ * Primary Markets: Debt and equity underwriting, syndication, and private placements.
+ * Secondary Markets: Market‐making in fixed income, equities, foreign exchange (FX), and listed derivatives.
+ * Structured Products: Bespoke derivatives, securitisation, and structured notes.
+ * Treasury Collaboration: Funding optimisation, liquidity provision, and balance‐sheet hedging.
+ *
+2\. Desk Structure
+Desk| Core Products| Typical Clients| P&L Drivers 
+---|---|---|--- 
+Fixed Income & Rates| Government & corporate bonds, interest‐rate swaps,
+repos| Pension funds, asset managers, treasuries| Bid‐ask spread, inventory
+gains, carry 
+Credit Trading| Investment‐grade & HY cash bonds, CDS, index tranches|
+Hedge funds, insurers| Spread trading, relative‐value, net carry 
+Equities & Equity‐Linked| Cash equities, ETFs, options, equity swaps|
+Asset managers, retail broker flow| Commissions, delta‐one financing, option
+volatility 
+Foreign Exchange (FX)| Spot, forwards, NDFs, FX options| Corporates,
+asset managers| Bid‐ask, funding (tom‐next), volatility 
+Commodities & EM| Energy futures, metals options, EM local bonds|
+Corporates, commodity traders| Curve & basis trading, volatility 
+Securitisation & Structured Credit| ABS, MBS, CLO warehousing| Mortgage
+lenders, private equity| Arrangement fees, excess spread retention 
+Debt Capital Markets (DCM)| Bond underwriting (IG, HY, SSA)| Corporates,
+provinces, agencies| Underwriting fees, new‐issue concessions 
+Equity Capital Markets (ECM)| IPOs, follow‐ons, share buybacks| Public &
+pre‐IPO firms| Underwriting & advisory fees 
+ 
+ *
+3\. Revenue Streams
+ 1. Trading Income
+ * Bid -Ask Spread: Difference between client price and inter‐dealer execution.
+ * Net Interest Carry: Coupon / financing income on inventory.
+ * Mark‐to‐Market (MTM): Daily P&L from price moves and hedging effectiveness.
+ 2. Origination & Advisory Fees
+ * Underwriting: Gross fee × deal size × risk tier.
+ * Syndication: Lead‐left fees, co‐manager allocations.
+ 3. Financing & Prime Services
+ * Securities lending, margin financing, and collateral optimisation.
+ 4. Distribution & Placement Fees
+ * Structured‐note placement, private credit placements.
+ *
+4\. Market‐Risk Management Framework
+Component| Metric / Limit| Frequency 
+---|---|--- 
+Value at Risk (VaR)| 1‐day 99 % VaR by desk and aggregate| Daily 
+Expected Shortfall (ES)| 10‐day 97.5 % ES for regulatory capital| Daily 
+Sensitivity (DV01 / Vega / CS01)| Ladder limits for interest‐rate &
+credit desks| Intraday 
+Stress Scenarios| 2008 credit‐crunch, 2020 COVID shock, bespoke commodity
+collapse| Weekly 
+Stop -Loss| Desk P&L drawdown threshold (e.g., -C$5 MM)| Real‐time 
+ 
+> Market‐Risk Capital is calculated under Basel III's standardised or
+> internal‐model (IMA) approach; results feed into the bank‐wide Economic
+> Capital Allocation page.
+ *
+5\. Funding & Liquidity Interface
+ * Short‐Term Funding: Use of repo, FX swaps, and commercial paper to finance trading inventory.
+ * Netting & Collateral: Central Counterparty (CCP) clearing vs. bilateral ISDA CSAs; optimisation reduces Liquidity Coverage Ratio (LCR) drag.
+ * Transfer‐Pricing: Treated via Funds‐Transfer Pricing (FTP) rate plus trading‐specific liquidity add‐ons (linked to the FTP methodology in the Advanced Financial Framework page).
+ *
+6\. Regulatory Capital & Reporting
+Requirement| Standard| Responsibility 
+---|---|--- 
+Market‐Risk Capital| Basel III FRTB (SA & IMA)| Market Risk Management 
+Large Exposure Limits| OSFI / Basel concentration limits| Treasury & Risk 
+Leverage Ratio Exposure| SFT add‐ons, derivative‐conversion factors|
+Capital Management 
+Transaction Reporting| OTC derivatives to Canadian Trade Repositories|
+Compliance & Operations 
+ 
+ *
+7\. Control Environment & Governance
+ * Three‐Lines Model:
+ 1. Desks (risk takers)
+ 2. Independent Risk & Finance (limit setting, valuation)
+ 3. Internal Audit (periodic assurance)
+ * Valuation Controls: Independent Price Verification (IPV), fair‐value hierarchy disclosure (IFRS 13).
+ * Model Governance: Quantitative models validated under Guideline E‐16 schedule; refer to Model Inventory page.
+ * Trade Surveillance: Automated alerts for pricing anomalies, wash trades, last‐look abuse.
+ *
+8\. KPIs & Dashboard Targets
+KPI| Target| Comment 
+---|---|--- 
+Return on Risk‐Weighted Assets (RoRWA)| ≥ 1.4 %| Post‐tax desk P&L ÷
+market‐risk RWA 
+Cost‐to‐Income Ratio (Trading)| ≤ 55 %| Net trading revenue basis 
+Counterparty VaR Utilisation| ≤ 80 % of limit| Monitored intraday 
+Funding Gap (ST < 30 days)| ≤ C$500 MM| Aligned with Liquidity Playbook 
+ 
+ *
+9\. Related Internal Pages
+ * Advanced Financial Framework & Cross‐Page Architecture - methodology for FTP, RAROC, stress‐testing.
+ * Market‐Risk Limits & VaR Models - detailed limit matrix and back‐testing procedures.
+ * Treasury & Liquidity Playbook - LCR, NSFR, and contingency funding plans.
+ * Glossary of Key Finance & Risk Terms - definitions of VaR, ES, FTP, etc.
+ *
+10\. ️ Review & Maintenance
+Item| Owner| Frequency 
+---|---|--- 
+Desk Limit Calibration| Market Risk| Semi‐Annual 
+Capital Markets Strategy Update| Head of Capital Markets| Annual 
+Model Validation (FRTB IMA)| Model Risk| Annual 
+Control Assessment (SOX / CSAE 3416)| Internal Audit| Biennial 
+ 
+ *
+️ Confidential
+For Maple Trust Bank staff only. Re‐distribution outside the institution
+requires approval from the Head of Capital Markets and the Chief Risk Officer.
+ *

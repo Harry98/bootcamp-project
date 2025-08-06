@@ -1,0 +1,82 @@
+Title of the page is Business Banking 
+ 
+ Page Created by: Kartik Sharma
+ Page Last edited by: Kartik Sharma
+ and markdown of the page is 
+ *
+1\. Introduction
+Maple Trust Bank's Business Banking Solutions are designed to support
+companies of all sizes and industries with tailored financial products,
+services, and advisory support. From daily cash flow management to growth
+financing and point‐of‐sale integration, we help businesses operate smoothly
+and seize opportunities.
+ *
+2\. Business Chequing Accounts
+Account Tier| Monthly Fee| Transaction Allowance| Key Features 
+---|---|---|--- 
+Starter| $0| 50 transactions| No monthly fee, basic online banking, free
+Interac e‐Transfers 
+Growth| $14.95| 150 transactions| Automated sweep to savings, overdraft
+protection, mobile deposits 
+Enterprise| $29.95| Unlimited| Dedicated relationship manager, custom
+reporting, priority support 
+ 
+ * Automated Sweep: Excess balances in chequing can sweep into a high‐interest business savings account overnight.
+ * Overdraft Protection: Linked line of credit up to pre‐approved limit for temporary cash shortfalls.
+ * Custom Reporting: Downloadable reports, CSV exports, and integration with popular accounting software (e.g., QuickBooks, Xero).
+ *
+3\. Business Lending
+Loan Type| Purpose| Terms & Rates 
+---|---|--- 
+Term Loans| Purchase equipment, expansion, capex| $25,000-$5M; fixed or
+variable rates; 1-10 years 
+Lines of Credit| Seasonal cash flow, working capital| Up to $500K; prime
++ 1.00%; revolving access 
+Commercial Mortgages| Purchase or refinance commercial real estate| Up to
+75% LTV; amortization up to 25 years; variable or fixed 
+Asset Financing (Leases)| Equipment or vehicle leasing| Leasing term up
+to 7 years; 100% financing options 
+ 
+ 1. Pre‐qualification: Quick eligibility check with no impact to credit score.
+ 2. Documentation: Consolidated package including financial statements and business plan.
+ 3. Decision Timeline: Term loan decisions within 3-5 business days.
+ 4. Dedicated Officer: A single point of contact for structuring and disbursement.
+ *
+4\. Cash Management Services
+ * Automated Clearing House (ACH): Batch payment processing for payroll, vendor payments.
+ * Wire Transfers: Domestic and international wires with competitive FX rates.
+ * Zero‐Balance Accounts: Centralize funds and eliminate idle balances.
+ * Lockbox Services: Improve receivables processing by having payments sent directly to a secured lockbox.
+ * Positive Pay & Fraud Controls: Automated check‐fraud detection, email alerts for exceptions.
+ *
+5\. Merchant Services
+Service| Features 
+---|--- 
+POS Terminals| Chip & PIN, contactless NFC, mobile/swipe readers 
+Payment Gateway| API integration for e‐commerce, recurring billing
+support 
+Virtual Terminal| Process card‐not‐present transactions via secure portal 
+Mobile Payments| Apple Pay, Google Pay, Samsung Pay integration 
+Settlement & Reporting| Next‐day settlement, detailed transaction
+analytics 
+ 
+ *
+6\. Industry‐Specific Offerings
+6.1 Retail & E‐Commerce
+ * Dynamic Discounting: Early‐payment incentives for B2B suppliers.
+ * Inventory Financing: Financing tied to inventory levels and turnover.
+6.2 Hospitality & Restaurants
+ * Revenue‐Based Financing: Flexible repayments based on monthly sales.
+ * Integrated POS Financing: Bundled hardware and financing for new location setups.
+6.3 Agriculture & Agribusiness
+ * Seasonal Operating Lines: Align borrowing with planting/harvest cycles.
+ * Equipment Loans: Deferred payment options until crop sale.
+6.4 Professional Services
+ * Fee‐Based Lending: Loans secured by accounts receivable or contracts.
+ * Client Trust Account Services: Segregated trust accounts with compliance reporting.
+ *
+7\. ️ Advisory & Support
+ * Dedicated Relationship Manager: Personalized guidance on product selection and business strategy.
+ * Online Business Resource Center: Webinars, whitepapers, and calculators for cash‐flow planning, budgeting, and risk management.
+ * Integration Support: Assistance with API integration for cash‐management and merchant‐service platforms.
+ *

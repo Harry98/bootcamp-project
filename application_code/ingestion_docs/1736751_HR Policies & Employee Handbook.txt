@@ -1,0 +1,121 @@
+Title of the page is HR Policies & Employee Handbook 
+ 
+ Page Created by: Johnson Zhuang
+ Page Last edited by: Johnson Zhuang
+ and markdown of the page is 
+ Welcome to the HR Policies & Employee Handbook. This guide outlines the
+expectations, benefits, and responsibilities of being an employee at Omers.
+These policies apply to all full-time, part-time, and contract employees
+unless otherwise stated.
+> ️ Last Updated : July 24, 2025
+> Contact HR : [hr@yourcompany.com](mailto:hr@yourcompany.com)
+> Page Tags : HR, Policy, Handbook, Employee Resources
+ *
+ Table of Contents
+none
+ *
+1\. ‍️ Code of Conduct
+At [Your Company], we expect every employee to behave ethically,
+professionally, and with respect. Our Code of Conduct ensures a productive and
+fair working environment.
+Key Principles:
+ * Comply with all laws and internal policies
+ * Treat colleagues and clients with dignity
+ * Avoid conflicts of interest or unethical behavior
+ * Represent the company positively in public and online
+> Download : Full Code of Conduct PDF
+ *
+2\. ️ Equal Opportunity & Anti-Discrimination
+We are committed to maintaining a workplace free from discrimination and bias.
+What We Support:
+ * Equal opportunity in hiring, development, and promotion
+ * A culture of inclusion across race, gender, age, religion, disability, and background
+ * Fair treatment in compensation and disciplinary actions
+What We Don 't Tolerate:
+ * Discrimination or harassment of any kind
+ * Retaliation against individuals who report violations
+> Related: Diversity, Equity & Inclusion Strategy
+ *
+3\. ⏰ Work Hours, Attendance & Timekeeping
+Our goal is to support flexibility while maintaining accountability.
+Standard Hours:
+ * Core Hours : 9:00 AM - 5:00 PM (Local Time)
+ * Flexibility : Shift start time ±1 hour depending on your team
+ * Breaks : 1-hour lunch break, 2 short breaks encouraged
+Expectations:
+ * Submit time via [Time Tracking Tool Name]
+ * Notify managers in advance of late arrivals or absences
+ * Refrain from excessive unplanned leave
+> See: Attendance Management Policy
+ *
+4\. Leave and Absence Policy
+We provide competitive time-off policies to help you maintain work-life
+balance.
+Leave Type| Details 
+---|--- 
+Vacation| 15-25 days annually, based on tenure 
+Sick Leave| Up to 10 paid sick days per year 
+Parental Leave| 16 weeks paid, extended unpaid leave available 
+Bereavement| 3-5 days, depending on relationship 
+Public Holidays| Follows local government calendar 
+ 
+How to Request Time Off:
+ 1. Submit request in [HR System Name]
+ 2. Notify your direct manager
+ 3. Wait for approval before booking travel
+ *
+5\. Remote & Hybrid Work Guidelines
+We support hybrid and fully remote work where appropriate.
+General Rules:
+ * Employees must be reachable during core business hours
+ * Secure company devices and VPN access are required
+ * Meetings must be attended with camera on unless otherwise stated
+Policy Element| Requirement 
+---|--- 
+Remote Days/Week| Up to 3 remote days (unless role-specific) 
+Workspace Setup| Ergonomic desk, stable Wi-Fi recommended 
+Tooling| Slack, Zoom, Notion, Confluence, VPN 
+ 
+> ️ See also: Remote Work Reimbursement Policy
+ *
+6\. Data Protection & Confidentiality
+As a responsible organization, we prioritize data security and compliance.
+Responsibilities:
+ * Do not share confidential documents outside the company
+ * Use encrypted storage and MFA for all tools
+ * Report data loss or breaches within 24 hours to [security@yourcompany.com](mailto:security@yourcompany.com)
+Legal Compliance:
+ * GDPR (EU), PIPEDA (Canada), CCPA (California)
+ * Adhere to data retention and destruction policies
+> Reference: IT Security Policy
+ *
+7\. ️ Workplace Conduct & Anti-Harassment
+We are committed to a safe and respectful workplace for everyone.
+What 's Covered:
+ * Sexual harassment
+ * Bullying or verbal abuse
+ * Discriminatory remarks
+ * Physical intimidation or threats
+How to Report:
+ 1. Speak to your HR Business Partner
+ 2. Use the anonymous Incident Reporting Form
+ 3. Emergency? Contact HR Direct Line: (XXX) XXX-XXXX
+> All reports are confidential and taken seriously.
+ *
+8\. ️ Acknowledgement & Policy Updates
+Employee Acknowledgement
+Please read and acknowledge that you understand and agree to abide by the
+handbook.
+> Click here to complete the Acknowledgement Form
+ *
+Document Revision History
+Version| Date| Summary| Editor 
+---|---|---|--- 
+v1.0| 2025-07-24| Initial draft created| HR Department 
+v1.1| TBD| Next review and policy merge| HR Compliance 
+ 
+ *
+> Questions? Suggestions?
+> Please contact [hr@yourcompany.com](mailto:hr@yourcompany.com) or leave a
+> comment below.
+ *

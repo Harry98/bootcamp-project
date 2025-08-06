@@ -1,0 +1,81 @@
+Title of the page is Glossary for related terms used 
+ 
+ Page Created by: Kartik Sharma
+ Page Last edited by: Kartik Sharma
+ and markdown of the page is 
+ Term| Definition 
+---|--- 
+ALM (Asset -Liability Management)| The discipline of managing
+interest‐rate and liquidity risk on the bank's balance sheet by matching
+assets and liabilities in terms of maturity and repricing profiles. 
+AT1 (Additional Tier 1 Capital)| Per Basel III, hybrid instruments (e.g.,
+perpetual preferred shares) that absorb losses after CET1 but before Tier 2. 
+Basel Pillar 1 / Pillar 2| Pillar 1: minimum regulatory capital
+requirements; Pillar 2: supervisory review process and internal capital
+adequacy assessments above Pillar 1. 
+CET1 (Common Equity Tier 1)| The highest‐quality capital--ordinary shares
+and retained earnings--used to absorb losses first. 
+CFO / CRO / COO / CIO| Chief Financial / Risk / Operating / Information
+Officer--executive owners for content areas. 
+CIS Controls| A prioritized set of cybersecurity best practices published
+by the Center for Internet Security. 
+EAD (Exposure at Default)| The estimated outstanding amount a borrower
+owes at the time of default. 
+ES (Expected Shortfall)| A market‐risk measure representing the average
+loss in the tail beyond a specified VaR percentile. 
+ESG (Environmental, Social, Governance)| Criteria used to evaluate a
+company's ethical impact and sustainability efforts. 
+FTP (Funds‐Transfer Pricing)| Internal rate charged/credited to business
+units to reflect the true cost of funding and liquidity. 
+GDPR (General Data Protection Regulation)| EU regulation governing
+personal‐data privacy and security controls. 
+ICAAP (Internal Capital Adequacy Assessment Process)| Bank's
+self‐assessment of capital needs under Basel III Pillar 2, incorporating
+stress scenarios and management actions. 
+IRRBB (Interest‐Rate Risk in the Banking Book)| The risk to earnings or
+capital from movements in interest rates affecting non‐trading positions. 
+KRI (Key Risk Indicator)| Quantitative metric that signals increasing
+risk exposure (e.g., NPL ratio, cyber incidents). 
+KYC / KYB (Know Your Customer / Business)| Regulatory process for
+verifying identity of individuals (KYC) or entities (KYB) to prevent
+money‐laundering and fraud. 
+LCR (Liquidity Coverage Ratio)| Basel III metric requiring High‐Quality
+Liquid Assets ≥ projected 30‐day net cash outflows. 
+LGD (Loss Given Default)| Percentage of an exposure the bank expects to
+lose if the borrower defaults, after recoveries. 
+Model Inventory| Central registry containing every risk, finance, and
+pricing model, plus ownership and validation dates. 
+MVP (Minimum Viable Product)| The smallest functional version of a new
+page or process that delivers value for iterative improvement. 
+NSFR (Net Stable Funding Ratio)| Basel III metric ensuring stable funding
+≥ required stable funding over a one‐year horizon. 
+OpRisk Loss Database| Repository of operational‐risk events (fraud,
+system failure, etc.), with root‐cause and remediation data. 
+OSFI (Office of the Superintendent of Financial Institutions)| Canada's
+federal banking regulator; issues guidelines such as E‐16 (Model Risk). 
+PD (Probability of Default)| Likelihood that a borrower will default
+within a given time horizon (usually one year). 
+PD/LGD/EAD Grids| Tables mapping risk scores to PD, LGD, and EAD
+parameters for RWA calculations. 
+PIPEDA (Personal Information Protection and Electronic Documents Act)|
+Canadian law regulating private‐sector data privacy. 
+RAROC (Risk‐Adjusted Return on Capital)| Profitability measure: net
+income after tax ÷ economic capital. 
+RACI| Matrix assigning who is _Responsible_ , _Accountable_ , _Consulted_
+, and _Informed_ for each task. 
+RWA (Risk‐Weighted Assets)| Asset and off‐balance‐sheet exposures
+weighted by risk to determine minimum regulatory capital. 
+SLA (Service‐Level Agreement)| Agreed‐upon performance standard (e.g.,
+onboarding turnaround within 48 hours). 
+SME (Subject‐Matter Expert)| Employee with deep expertise responsible for
+authoring or reviewing specific content. 
+TAT (Turnaround Time)| Elapsed time between receipt of a request (e.g.,
+onboarding docs) and completion. 
+Tier 2 Capital| Subordinated debt and other long‐term instruments that
+absorb losses after AT1. 
+UL (Unexpected Loss)| Potential loss at a high confidence level (e.g.,
+99.9 %) beyond expected credit losses. 
+VaR (Value at Risk)| Statistical estimate of the maximum loss over a
+given horizon at a specified confidence level. 
+Yield Curve| Graph of interest rates across different maturities, used in
+FTP and IRRBB analysis.
