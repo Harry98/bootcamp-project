@@ -1,8 +1,10 @@
+import os
 import asyncio
 import json
 from typing import List
 
 from langchain_mcp_adapters.client import MultiServerMCPClient
+from kb_weaviate import AsyncWeaviateKnowledgeBase, get_weaviate_async_client
 
 MCP_SERVER_NAME = "Confluence MCP Server"
 client = MultiServerMCPClient(
@@ -13,7 +15,20 @@ client = MultiServerMCPClient(
         },
     }
 )
+async_weaviate_client = get_weaviate_async_client(
+    http_host=os.getenv("WEAVIATE_HTTP_HOST"),
+    http_port=os.getenv("WEAVIATE_HTTP_PORT"),
+    http_secure=os.getenv("WEAVIATE_HTTP_SECURE"),
+    grpc_host=os.getenv("WEAVIATE_GRPC_HOST"),
+    grpc_port=os.getenv("WEAVIATE_GRPC_PORT"),
+    grpc_secure=os.getenv("WEAVIATE_GRPC_SECURE"),
+    api_key=os.getenv("WEAVIATE_API_KEY"),
+)
 
+async_knowledgebase = AsyncWeaviateKnowledgeBase(
+    async_weaviate_client,
+    collection_name="enwiki_20250520",
+)
 
 async def get_tools():
     tools = await client.get_tools()
