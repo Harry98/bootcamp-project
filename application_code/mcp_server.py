@@ -3,13 +3,14 @@ from typing import Dict
 from mcp.server.fastmcp import FastMCP
 from atlassian import Confluence
 import html2text
+import os
 
 mcp = FastMCP(name="Confluence MCP Server")
 
 confluence = Confluence(
-    url='https://omerspensions.atlassian.net',
-    username='hagrewal@omers.com',
-    password='ATATT3xFfGF0A8sk2CVuXuwoVz51zrJIyD9r_wLAVlUwQ-fAtO4JPFW10RSAyg2_NhzBcpZesHR5b0u2YIb2QGp0rpfC-ZbPTjBBXtZed_I2LKDlRyJ_BL2MVlkliHZ60bi1kPTILdwJte04SjN0M90dpVlBaL3w-tDGDKnW6lQXNcbepiMdZ0c=49EE561D',
+    url=os.getenv("CONFLUENCE_URL"),
+    username=os.getenv("CONFLUENCE_ACCOUNT"),
+    password=os.getenv("CONFLUENCE_TOKEN"),
     cloud=True)
 
 
