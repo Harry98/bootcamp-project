@@ -1,6 +1,25 @@
+import os
+
+from atlassian import Confluence
+
 from graph_state import RAGState
-from agents import agent_3_confluence_filter_pages
+from agents import agent_3_confluence_filter_pages, agent_1_generate_cql
 import asyncio
+from dotenv import load_dotenv
+
+load_dotenv()
+
+confluence = Confluence(
+    url=os.getenv("CONFLUENCE_URL"),
+    username=os.getenv("CONFLUENCE_ACCOUNT"),
+    password=os.getenv("CONFLUENCE_TOKEN"),
+    cloud=True)
+
+
+def test_search_confluence():
+    query = 'siteSearch ~ "Maple trust bank"'
+    result = confluence.cql(query)
+    print(result)
 
 
 def test_agent_4_confluence_review_agent():
@@ -33,5 +52,21 @@ def test_agent_4_confluence_review_agent():
     print(asyncio.run(agent_3_confluence_filter_pages(state=dummy_state)))
 
 
+def test_agent_1_generate_cql():
+    dummy_state = RAGState(
+        session_id="testing",
+        user_query="Tell me about Maple trust bank?",
+        confluence_response=[],
+        filtered_pages=[],
+        vector_db_response=[],
+        answer="",
+        cql_queries=[]
+    )
+    print(asyncio.run(agent_1_generate_cql(state=dummy_state)))
+
+
 if __name__ == '__main__':
-    test_agent_4_confluence_review_agent()
+    print("Starting code to be tested.")
+    # test_agent_4_confluence_review_agent()
+    # test_agent_1_generate_cql()
+    test_search_confluence()

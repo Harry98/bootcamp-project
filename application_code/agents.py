@@ -10,6 +10,7 @@ async def agent_1_generate_cql(state: RAGState):
     response = await cql_generation_chain.ainvoke(input={
         'user_query': state.get("user_query")
     })
+    iterator(response.cql_queries)
 
     confluence_response = await search_confluence_with_cql_queries(response.cql_queries)
     # iterator(confluence_response)

@@ -1,3 +1,4 @@
 .env
 ./.env
 .venu
+__pycache__

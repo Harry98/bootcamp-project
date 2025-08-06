@@ -4,6 +4,8 @@ from mcp.server.fastmcp import FastMCP
 from atlassian import Confluence
 import html2text
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
 mcp = FastMCP(name="Confluence MCP Server")
 
