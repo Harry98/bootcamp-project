@@ -4,20 +4,25 @@ Python 3.12.3
 ```
 
 ## Setting Project locally:
-```
-### Create a Virtual Environment (if not already created):
 
+### Create a Virtual Environment (if not already created):
+```
 python3.12 -m venv .venu
+```
 
 ### Activate Virtual Environment:
-
-**MAC** source .venu/bin/activate
+**MAC** 
+```
+source .venu/bin/activate
+```
 
 ### Deactivate Virtual Environment:
+```
 deactivate
+```
 
 ### Run following command to download dependencies:
-
+```
 python3 -m pip install -r requirements.txt
 ```
 
@@ -26,17 +31,17 @@ python3 -m pip install -r requirements.txt
 
 ```
 cd application_code
-Then create the .env file and paste all the secrets.
 ```
 
+**Then create the .env file and paste all the secrets.**
 
-### First start the mcp server
+### Start the mcp server
 
 ```
 python3 -m mcp_server
 ```
 
-Then main file to be executed is graph.py which includes the compiled graph
+### Then main file to be executed is graph.py which includes the compiled graph
 
 ```
 python3 -m graph
