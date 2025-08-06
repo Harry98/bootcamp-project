@@ -6,7 +6,7 @@ from graph_state import RAGState
 from agents import agent_3_confluence_filter_pages, agent_1_generate_cql
 import asyncio
 from dotenv import load_dotenv
-from agents_helper import search_confluence_with_cql_queries
+from agents_helper import search_confluence_with_cql_queries, get_tools
 
 load_dotenv()
 
@@ -71,4 +71,5 @@ if __name__ == '__main__':
     # test_agent_4_confluence_review_agent()
     # test_agent_1_generate_cql()
     #test_search_confluence()
-    asyncio.run(search_confluence_with_cql_queries(['siteSearch ~ "Maple trust bank"']))
+    #asyncio.run(search_confluence_with_cql_queries(['siteSearch ~ "Maple trust bank"']))
+    asyncio.run(get_tools())

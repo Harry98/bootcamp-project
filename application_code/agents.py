@@ -1,4 +1,4 @@
-from llm import LLM
+from llm import LLM, DEEP_RESEARCH_LLM
 from graph_state import RAGState
 from prompts import CQL_GENERATION_PROMPT, AgentCqlPrompt, CONFLUENCE_PAGE_SYSTEM_MESSAGE
 from agents_helper import get_tools, search_confluence_with_cql_queries, iterator, download_pages
@@ -41,7 +41,7 @@ async def agent_3_confluence_filter_pages(state: RAGState):
     iterator(state['confluence_response'])
     tools = await get_tools()
     tools_map = {t.name: t for t in tools}
-    filter_pages_lcl = CONFLUENCE_PAGE_SYSTEM_MESSAGE | LLM.bind_tools(tools)
+    filter_pages_lcl = CONFLUENCE_PAGE_SYSTEM_MESSAGE | DEEP_RESEARCH_LLM.bind_tools(tools)
     filtered_pages = await filter_pages_lcl.ainvoke(input={
         'user_query': state['user_query'],
         'confluence_pages_list': state['confluence_response'],
