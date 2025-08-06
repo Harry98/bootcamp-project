@@ -70,7 +70,7 @@ def search_confluence_based_on_cql_query(cql: str) -> Dict:
               - Identify relevant pages for further processing
               - Build content inventories and reports
     """
-    return confluence.cql(cql, start=0, limit=25)
+    return confluence.cql(cql, start=0, limit=10)
 
 
 @mcp.tool()
