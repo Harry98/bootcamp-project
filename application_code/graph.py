@@ -115,7 +115,7 @@ async def execute_user_query(user_query: str):
 
 if __name__ == '__main__':
     test_query = [
-        "Tell me what is Maple trust bank?",
+        "What is Maple trust bank?",
     ]
     asyncio.run(execute_user_query(test_query[0]))
         
