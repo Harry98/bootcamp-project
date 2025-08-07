@@ -1,10 +1,12 @@
 import os
 import asyncio
 import json
-from typing import List
-
+from collections import Counter
+from typing import List, Dict
+from langfuse import observe
 from langchain_mcp_adapters.client import MultiServerMCPClient
 from kb_weaviate import AsyncWeaviateKnowledgeBase, get_weaviate_async_client
+import re
 
 MCP_SERVER_NAME = "Confluence MCP Server"
 client = MultiServerMCPClient(
@@ -27,8 +29,22 @@ async_weaviate_client = get_weaviate_async_client(
 
 async_knowledgebase = AsyncWeaviateKnowledgeBase(
     async_weaviate_client,
-    collection_name="enwiki_20250520",
+    collection_name="omers_confluence_dataset",
 )
+
+def transform_search_result(response: dict) -> dict:
+    return {
+        'page_id': extract_id(response.source.title),
+        'title': response.source.title,
+        'page_content': response.highlight.text[0] 
+    }
+
+def extract_id(text: str) -> str:
+    match = re.match(r"(\d+)_", text)
+    if match:
+        return match.group(1)
+    return None
+
 
 async def get_tools():
     tools = await client.get_tools()
@@ -36,6 +52,7 @@ async def get_tools():
     return tools
 
 
+@observe(name="mcp_server_call_search_confluence_with_cql_queries")
 async def search_confluence_with_cql_queries(cql_queries: List[str]):
     async with client.session(MCP_SERVER_NAME) as session:
         all_corr = []
@@ -81,6 +98,7 @@ def iterator(values):
         print(val)
 
 
+@observe(name="mcp_server_call_download_pages_by_page_id_from_confluence")
 async def download_pages(filtered_pages, tools_map):
     try:
         content_map = []
@@ -108,3 +126,7 @@ async def download_pages(filtered_pages, tools_map):
 
     except Exception as e:
         return []
+
+
+def merge_maps(map1: Dict[str, int], map2: Dict[str, int]) -> Dict[str, int]:
+    return dict(Counter(map1) + Counter(map2))

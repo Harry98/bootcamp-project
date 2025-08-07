@@ -1,6 +1,4 @@
-import operator
-from typing import TypedDict, Dict, List, Any, Annotated
-
+from typing import TypedDict, Dict, List, Any
 
 class RAGState(TypedDict):
     session_id: str
