@@ -103,7 +103,13 @@ async def agent_4_vector_db_filter_records(state: RAGState):
     """
     vector_db_response = []  # Set this equal to the response from vector DB
     return {
-        'vector_db_response': vector_db_response
+        'vector_db_response': vector_db_response,
+        'token_usage': {
+            'total_tokens': 0,
+            'input_tokens': 0,
+            'output_tokens': 0,
+            'total_cost': 0
+        }
     }
 
 
@@ -118,5 +124,11 @@ async def agent_5_summarize_the_answer(state: RAGState):
     """
     answer = ""  # Set this equal to the response from LLM
     return {
-        'answer': answer
+        'answer': answer,
+        'token_usage': {
+            'total_tokens': 0,
+            'input_tokens': 0,
+            'output_tokens': 0,
+            'total_cost': 0
+        }
     }
