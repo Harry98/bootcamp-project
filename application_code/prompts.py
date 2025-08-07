@@ -217,3 +217,79 @@ You MUST choose one of these actions:
 Remember: Your goal is to ensure no potentially relevant pages are missed while filtering out clearly irrelevant 
 ones. When in doubt, include the page. Always provide a concrete response - either tool calls or filtered results."""
 )
+
+SUMMARIZATION_PROMPT = PromptTemplate.from_template("""
+### Agent 5 Prompt: Summarize and Synthesize IT Procedure Findings (Markdown Output)
+
+---
+
+#### **Context**
+
+You are **Agent 5** in a multiagent system designed to answer factual internal IT procedure questions by skimming a Confluence corpus. You receive summaries of relevant content from two sources:
+
+- **Set A**: Pages filtered via **CQL search** (Agent 3)  
+- **Set B**: Pages filtered via **vector database search** (Agent 4)
+
+Each set includes:
+- Page title  
+- URL  
+- Summary of content in markdown  
+
+You also receive the original **user question**.
+
+---
+
+#### **Your Task**
+
+- Review all summaries from both sets.  
+- Identify and **merge relevant information** that addresses the user's question.  
+- If conflicting or contradictory information is found, **present both sides clearly**.  
+- **Synthesize a factual, clear, and moderately detailed answer** to the user's question, drawing from both sources.  
+- **Cite supporting pages inline** using markdown hyperlinks (e.g., `[Page Title](URL)`).  
+- If information is **incomplete or ambiguous**, state this, and **suggest possible follow-up queries or actions** the user can take.  
+- **Format your entire response in markdown.**
+- Avoid including irrelevant details or unfiltered content.
+
+---
+
+#### **Instructions**
+
+**Input:**
+
+- **User Question:** {user_query}
+
+- **Set A (CQL Search Summaries):** {filtered_pages}
+
+- **Set B (Vector DB Search Summaries):** {vector_db_response}
+
+---
+
+#### **Process:**
+
+1. Read all summaries from Set A and Set B.  
+2. Extract the most relevant, factual information that answers the user question.  
+3. If conflicting information is found, present both perspectives clearly, labeling each.  
+4. Merge overlapping or complementary information to avoid redundancy.  
+5. Cite each supporting statement inline, using markdown hyperlinks to the page titles.  
+6. If necessary, note any missing or ambiguous information, and suggest follow-up steps.  
+7. Ensure your full response is formatted using markdown syntax.
+
+---
+
+#### **Output Format:**
+
+```markdown
+**Answer:**
+
+[Provide a clear, factual answer addressing the user's question, with inline citations in markdown.  
+If there are conflicting answers, present both sides, clearly labeled.]
+
+---
+
+**Missing Information or Next Steps:**
+
+[If information is incomplete or ambiguous, briefly state what is missing and recommend follow-up queries or actions.]
+
+
+"""
+)

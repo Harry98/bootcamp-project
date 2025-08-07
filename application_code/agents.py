@@ -1,7 +1,8 @@
 from llm import LLM, DEEP_RESEARCH_LLM
 from graph_state import RAGState
-from prompts import CQL_GENERATION_PROMPT, AgentCqlPrompt, CONFLUENCE_PAGE_SYSTEM_MESSAGE
+from prompts import CQL_GENERATION_PROMPT, AgentCqlPrompt, CONFLUENCE_PAGE_SYSTEM_MESSAGE, SUMMARIZATION_PROMPT
 from agents_helper import get_tools, search_confluence_with_cql_queries, iterator, download_pages
+from langchain.prompts import PromptTemplate
 
 
 async def agent_1_generate_cql(state: RAGState):
@@ -79,11 +80,12 @@ async def agent_5_summarize_the_answer(state: RAGState):
     print("Starting agent_5_summarize_the_answer")
     """
     Send LLM user query, filtered_pages, vector_db_response and tools
-    (Send LLM tools to download the page content in Markdown format if required.)
 
     Ask LLM to generate final answer to user query based on the information provided.
     """
-    answer = ""  # Set this equal to the response from LLM
-    return {
-        'answer': answer
-    }
+
+    prompt = SUMMARIZATION_PROMPT.format(user_query=state['user_query'], filtered_pages=state['filtered_pages'], vector_db_response=state['vector_db_response'] )
+
+    answer = LLM.invoke(input = prompt)
+    
+    return {'answer': answer.content}, {'agent_5_token_usage': answer.metadata}
