@@ -86,5 +86,12 @@ async def agent_5_summarize_the_answer(state: RAGState):
     prompt = SUMMARIZATION_PROMPT.format(user_query=state['user_query'], filtered_pages=state['filtered_pages'], vector_db_response=state['vector_db_response'] )
 
     answer = LLM.invoke(input = prompt)
-    
-    return {'answer': answer.content}, {'agent_5_token_usage': answer.metadata}
+
+    return {
+        'answer': answer,
+        'agent_5_summarize_the_answer_token_usage': {
+            'total_tokens': answer.response_metadata["token_usage"]["total_tokens"],
+            'input_tokens': answer.response_metadata["token_usage"]["prompt_tokens"],
+            'output_tokens': answer.response_metadata["token_usage"]["completion_tokens"]
+        }
+    }
