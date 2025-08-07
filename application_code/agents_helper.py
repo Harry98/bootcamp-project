@@ -6,6 +6,7 @@ from typing import List, Dict
 from langfuse import observe
 from langchain_mcp_adapters.client import MultiServerMCPClient
 from kb_weaviate import AsyncWeaviateKnowledgeBase, get_weaviate_async_client
+import re
 
 MCP_SERVER_NAME = "Confluence MCP Server"
 client = MultiServerMCPClient(
@@ -33,9 +34,16 @@ async_knowledgebase = AsyncWeaviateKnowledgeBase(
 
 def transform_search_result(response: dict) -> dict:
     return {
+        'page_id': extract_id(response.source.title),
         'title': response.source.title,
-        'text': response.highlight.text[0] 
+        'page_content': response.highlight.text[0] 
     }
+
+def extract_id(text: str) -> str:
+    match = re.match(r"(\d+)_", text)
+    if match:
+        return match.group(1)
+    return None
 
 
 async def get_tools():

@@ -48,7 +48,6 @@ class AsyncWeaviateKnowledgeBase:
         async_client: WeaviateAsyncClient,
         collection_name: str,
         num_results: int = 5,
-        snippet_length: int = 1000,
         max_concurrency: int = 3,
         embedding_model_name: str = "@cf/baai/bge-m3",
         embedding_api_key: str | None = None,
@@ -57,7 +56,7 @@ class AsyncWeaviateKnowledgeBase:
         self.async_client = async_client
         self.collection_name = collection_name
         self.num_results = num_results
-        self.snippet_length = snippet_length
+        
         self.logger = logging.getLogger(__name__)
         self.semaphore = asyncio.Semaphore(max_concurrency)
 
@@ -115,7 +114,7 @@ class AsyncWeaviateKnowledgeBase:
                     "section": obj.properties.get("section", None),
                 },
                 "highlight": {
-                    "text": [obj.properties.get("text", "")[: self.snippet_length]]
+                    "text": [obj.properties.get("text", "")]
                 },
             }
             hits.append(hit)
