@@ -10,6 +10,8 @@ from agents import (
     agent_5_summarize_the_answer
 )
 from graph_state import RAGState
+from langfuse_utils.oai_sdk_setup import setup_langfuse_tracer
+from langfuse_utils.shared_client import langfuse_client
 
 # Node constants
 NODE_1 = "CQL_GENERATION_AGENT"
@@ -86,9 +88,16 @@ async def execute_user_query(user_query: str):
     async for chunk in confluence_workflow.astream(input=state, stream_mode="updates"):
         print(f"Got update from the state {chunk}.")
 
+    setup_langfuse_tracer()
+
+    with langfuse_client.start_as_current_span(name="Agents-SDK-Trace") as span:
+        span.update(input=state)
+
+
 
 if __name__ == '__main__':
     test_query = [
-        "What is Maple trust bank?",
+        "Tell me about Maple trust bank?",
     ]
     asyncio.run(execute_user_query(test_query[0]))
+        

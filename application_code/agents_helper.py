@@ -30,6 +30,13 @@ async_knowledgebase = AsyncWeaviateKnowledgeBase(
     collection_name="enwiki_20250520",
 )
 
+def transform_search_result(response: dict) -> dict:
+    return {
+        'title': response.source.title,
+        'text': response.highlight.text[0] 
+    }
+
+
 async def get_tools():
     tools = await client.get_tools()
     print(f"Tools available in MCP Server are {tools}")

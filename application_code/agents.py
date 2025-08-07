@@ -1,7 +1,7 @@
 from llm import LLM, DEEP_RESEARCH_LLM
 from graph_state import RAGState
 from prompts import CQL_GENERATION_PROMPT, AgentCqlPrompt, CONFLUENCE_PAGE_SYSTEM_MESSAGE
-from agents_helper import get_tools, search_confluence_with_cql_queries, iterator, download_pages
+from agents_helper import get_tools, search_confluence_with_cql_queries, iterator, download_pages, async_knowledgebase, transform_search_result
 
 
 async def agent_1_generate_cql(state: RAGState):
@@ -26,7 +26,12 @@ async def agent_2_search_vector_db(state: RAGState):
     Connect to vector DB and perform semantic search....
     Pass user query as input.
     """
-    vector_db_response = []  # Set this equal to the response from vector DB
+    results = await async_knowledgebase.search_knowledgebase(
+                state.get("user_query")
+    )
+    vector_db_response = []
+    for res in results:
+        vector_db_response.append(transform_search_result(res))
     return {
         'vector_db_response': vector_db_response
     }
