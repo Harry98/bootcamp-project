@@ -10,3 +10,4 @@ class RAGState(TypedDict):
     vector_db_response: List[Any] | None
     answer: str | None
     cql_queries: List[str] | None
+    token_usage: Any | None
