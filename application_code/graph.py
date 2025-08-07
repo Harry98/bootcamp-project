@@ -112,16 +112,10 @@ async def execute_user_query(user_query: str):
                 print(f"Got update from the state {chunk}.")
                 span.update(output=chunk)
 
-    setup_langfuse_tracer()
-
-    with langfuse_client.start_as_current_span(name="Agents-SDK-Trace") as span:
-        span.update(input=state)
-
-
 
 if __name__ == '__main__':
     test_query = [
-        "Tell me about Maple trust bank?",
+        "Tell me what is Maple trust bank?",
     ]
     asyncio.run(execute_user_query(test_query[0]))
         
