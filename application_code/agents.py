@@ -37,7 +37,7 @@ async def agent_1_generate_cql(state: RAGState):
     return {
         'cql_queries': response['result'],
         'confluence_response': confluence_response,
-        'token_usage': response['token_usage']
+        'agent_1_generate_cql_token_usage': response['token_usage']
     }
 
 
@@ -80,7 +80,7 @@ async def agent_3_confluence_filter_pages(state: RAGState):
     if not content_map or len(content_map) == 0:
         return {
             'filtered_pages': filtered_pages.content,
-            'token_usage': filtered_response['token_usage']
+            'agent_3_confluence_filter_pages_token_usage': filtered_response['token_usage']
         }
     else:
         tools_response = await run_langchain_expression(filter_pages_lcl, {
@@ -91,7 +91,7 @@ async def agent_3_confluence_filter_pages(state: RAGState):
         print(f"Filtered pages llm response 2st try {tools_response['result']}.")
         return {
             'filtered_pages': tools_response['result'].content,
-            'token_usage': merge_maps(tools_response['token_usage'], filtered_response['token_usage'])
+            'agent_3_confluence_filter_pages_token_usage': merge_maps(tools_response['token_usage'], filtered_response['token_usage'])
         }
 
 
@@ -104,7 +104,7 @@ async def agent_4_vector_db_filter_records(state: RAGState):
     vector_db_response = []  # Set this equal to the response from vector DB
     return {
         'vector_db_response': vector_db_response,
-        'token_usage': {
+        'agent_4_vector_db_filter_records_token_usage': {
             'total_tokens': 0,
             'input_tokens': 0,
             'output_tokens': 0,
@@ -125,7 +125,7 @@ async def agent_5_summarize_the_answer(state: RAGState):
     answer = ""  # Set this equal to the response from LLM
     return {
         'answer': answer,
-        'token_usage': {
+        'agent_5_summarize_the_answer_token_usage': {
             'total_tokens': 0,
             'input_tokens': 0,
             'output_tokens': 0,

@@ -29,24 +29,28 @@ def track_llm_generation(name: str, model_name: str = GEMINI_FLASH):
                                                                      model=model_name) as generation:
                         result = await func(*args, **kwargs)
                         print(f"Tracing Output of the {name} is {result}.")
-                        if 'token_usage' in result:
-                            print(f"Tokens used {name} are {result['token_usage']}")
+
+                        token_usage_key = f"{name}_token_usage"  # "{function_name}_token_usage"
+
+                        if token_usage_key in result:
+                            print(f"Tokens used {name} are {result[token_usage_key]}")
 
                             generation.update(
                                 output=result,
                                 input=state,
-                                usage_details=result['token_usage']
+                                usage_details=result[token_usage_key]
                             )
 
-                            span.update(
-                                output=result,
-                                input=state
-                            )
+                        span.update(
+                            output=result,
+                            input=state,
+                            metadata={'session_id': state['session_id']}
+                        )
 
-                            span.update_trace(
-                                output=result,
-                                input=state
-                            )
+                        span.update_trace(
+                            output=result,
+                            input=state
+                        )
 
                         print(f"Completed Tracing for: {name}")
                         return result

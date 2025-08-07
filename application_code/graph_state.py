@@ -1,6 +1,4 @@
-import operator
-from typing import TypedDict, Dict, List, Any, Annotated
-
+from typing import TypedDict, Dict, List, Any
 
 class RAGState(TypedDict):
     session_id: str
@@ -10,4 +8,3 @@ class RAGState(TypedDict):
     vector_db_response: List[Any] | None
     answer: str | None
     cql_queries: List[str] | None
-    token_usage: Any | None
