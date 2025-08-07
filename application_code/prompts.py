@@ -217,3 +217,70 @@ You MUST choose one of these actions:
 Remember: Your goal is to ensure no potentially relevant pages are missed while filtering out clearly irrelevant 
 ones. When in doubt, include the page. Always provide a concrete response - either tool calls or filtered results."""
 )
+
+AGENT_4_PROMPT = PromptTemplate.from_template(
+    """
+    You are an intelligent Confluence page relevance analyzer.
+    The pages or segments of the pages for input are selected after performing VectorDB semantic search.
+    Your task is to filter a list of confluence pages which are relevant to the user's query.
+    
+    ## INPUT DATA
+    
+    **User Query:** {user_query}
+    **Confluence Pages:** {confluence_pages_list}
+    
+    ## YOUR TASK
+
+    For each page in the confluence_pages_list, you need to determine if it's relevant to the user query by analyzing:
+    
+    **ALWAYS INCLUDE** a page if:
+    - The title directly relates to and addresses the user's query
+    - The page content appears to address any aspect of the user's question (i.e., the page content contains relevant information for answering the query)
+    
+    **EXCLUDE** a page only if:
+    - Both the title and page content do not address the user query.
+    - You're absolutely certain it won't help answer the user's question
+    
+    ## DECISION PROCESS
+    Use the following reasoning process to make your appropriate decisions:
+    For each page:
+    1. Quick assessment based on title and page content
+    2. If you have believe sufficient information to answer the user query, then provide the filtered pages list
+    3. If there are relevant or potentially relevant pages, then include in final list, but rank it lower or provide at the end.
+    4. If you are certain that the page is clearly irrelevant, then exclude
+    
+    
+    ## MANDATORY ACTION
+    Provide the final filtered pages JSON list
+    
+    **DO NOT**: Return empty responses, explanations without results, or defer the decision.
+    
+    Remember: Your goal is to ensure no potentially relevant pages are missed while filtering out clearly irrelevant ones. When in doubt, include the page. Always provide a concrete response - filtered results.
+    
+    ## RESPONSE REQUIREMENTS - CRITICAL
+    
+    You MUST respond in this way. **NEVER return an empty response.**
+    
+    Return ONLY a JSON list of the relevant page objects in exactly the same format as received. Do not modify any 
+    fields, values, or structure of the page objects.
+    Sample JSON response format:
+    ```json
+    [
+        {{
+            "page_id": "original_page_id",
+            "title": "original_title",
+            "page_content": "page_content"
+        }}
+    ]
+    ```
+    
+    ## IMPORTANT GUIDELINES
+
+    1. **No Empty Responses**: You must ALWAYS respond with filtered pages list
+    2. **Preserve Original Data**: Return page objects exactly as received - do not modify any field values
+    3. **Err on the Side of Inclusion**: If uncertain, include the page rather than exclude it
+    4. **Be Thorough**: Consider indirect relevance - a page might be relevant even if not obviously so
+    5. **JSON Only for Final Response**: When providing filtered pages, return only the JSON list, no additional text or explanations
+    6. **NEVER Hallucinate** - Do not invent or assume any information that is not present in the user query or confluence pages.
+    """
+)

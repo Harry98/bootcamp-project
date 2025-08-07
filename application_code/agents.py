@@ -1,4 +1,9 @@
+import json
+import re
+
 from langchain_community.callbacks import get_openai_callback
+
+from application_code.prompts import AGENT_4_PROMPT
 from llm import LLM, DEEP_RESEARCH_LLM, GEMINI_PRO
 from graph_state import RAGState
 from prompts import CQL_GENERATION_PROMPT, AgentCqlPrompt, CONFLUENCE_PAGE_SYSTEM_MESSAGE
@@ -106,15 +111,19 @@ async def agent_4_vector_db_filter_records(state: RAGState):
     """
      Filter the pages got from vector DB based on their usefulness in answering the user query.
     """
-    vector_db_response = []  # Set this equal to the response from vector DB
+    chain = AGENT_4_PROMPT | DEEP_RESEARCH_LLM
+
+    filtered_response = await run_langchain_expression(chain, {
+        'user_query': state['user_query'],
+        'confluence_pages_list': state["vector_db_response"]
+    })
+    filtered_pages = filtered_response['result']
+    print(f"Filtered pages llm response 1st try {filtered_pages.content}.")
+
+    content = re.search(r"```json\s*(.*?)\s*```", filtered_pages.content, flags=re.S | re.I).group(1)
     return {
-        'vector_db_response': vector_db_response,
-        'agent_4_vector_db_filter_records_token_usage': {
-            'total_tokens': 0,
-            'input_tokens': 0,
-            'output_tokens': 0,
-            'total_cost': 0
-        }
+        'vector_db_response': json.loads(content),
+        'agent_4_vector_db_filter_records_token_usage': filtered_response['token_usage']
     }
 
 
