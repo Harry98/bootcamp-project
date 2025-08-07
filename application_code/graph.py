@@ -118,3 +118,4 @@ if __name__ == '__main__':
         "What is Maple trust bank?",
     ]
     asyncio.run(execute_user_query(test_query[0]))
+        

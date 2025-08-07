@@ -28,8 +28,14 @@ async_weaviate_client = get_weaviate_async_client(
 
 async_knowledgebase = AsyncWeaviateKnowledgeBase(
     async_weaviate_client,
-    collection_name="enwiki_20250520",
+    collection_name="omers_confluence_dataset",
 )
+
+def transform_search_result(response: dict) -> dict:
+    return {
+        'title': response.source.title,
+        'text': response.highlight.text[0] 
+    }
 
 
 async def get_tools():

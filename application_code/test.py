@@ -3,7 +3,7 @@ import os
 from atlassian import Confluence
 
 from graph_state import RAGState
-from agents import agent_3_confluence_filter_pages, agent_1_generate_cql
+from agents import agent_3_confluence_filter_pages, agent_1_generate_cql, agent_2_search_vector_db
 import asyncio
 from dotenv import load_dotenv
 from agents_helper import search_confluence_with_cql_queries, get_tools
@@ -66,10 +66,24 @@ def test_agent_1_generate_cql():
     print(asyncio.run(agent_1_generate_cql(state=dummy_state)))
 
 
+def test_agent_2_search_vector_db():
+    dummy_state = RAGState(
+        session_id="testing",
+        user_query="Tell me about Maple trust bank?",
+        confluence_response=[],
+        filtered_pages=[],
+        vector_db_response=[],
+        answer="",
+        cql_queries=[]
+    )
+    print(asyncio.run(agent_2_search_vector_db(state=dummy_state)))
+
+
 if __name__ == '__main__':
-    print("Starting code to be tested.")
+    test_agent_2_search_vector_db()
+    #print("Starting code to be tested.")
     # test_agent_4_confluence_review_agent()
     # test_agent_1_generate_cql()
     #test_search_confluence()
     #asyncio.run(search_confluence_with_cql_queries(['siteSearch ~ "Maple trust bank"']))
-    asyncio.run(get_tools())
+    #asyncio.run(get_tools())
