@@ -36,7 +36,7 @@ def transform_search_result(response: dict) -> dict:
     return {
         'page_id': extract_id(response.source.title),
         'title': response.source.title,
-        'matched_content': response.highlight.text[0] 
+        'page_content': response.highlight.text[0] 
     }
 
 def extract_id(text: str) -> str:
