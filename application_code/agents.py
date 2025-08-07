@@ -2,7 +2,6 @@ from llm import LLM, DEEP_RESEARCH_LLM
 from graph_state import RAGState
 from prompts import CQL_GENERATION_PROMPT, AgentCqlPrompt, CONFLUENCE_PAGE_SYSTEM_MESSAGE, SUMMARIZATION_PROMPT
 from agents_helper import get_tools, search_confluence_with_cql_queries, iterator, download_pages
-from langchain.prompts import PromptTemplate
 
 
 async def agent_1_generate_cql(state: RAGState):
