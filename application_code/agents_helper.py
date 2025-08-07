@@ -1,8 +1,9 @@
 import os
 import asyncio
 import json
-from typing import List
-
+from collections import Counter
+from typing import List, Dict
+from langfuse import observe
 from langchain_mcp_adapters.client import MultiServerMCPClient
 from kb_weaviate import AsyncWeaviateKnowledgeBase, get_weaviate_async_client
 
@@ -43,6 +44,7 @@ async def get_tools():
     return tools
 
 
+@observe(name="mcp_server_call_search_confluence_with_cql_queries")
 async def search_confluence_with_cql_queries(cql_queries: List[str]):
     async with client.session(MCP_SERVER_NAME) as session:
         all_corr = []
@@ -88,6 +90,7 @@ def iterator(values):
         print(val)
 
 
+@observe(name="mcp_server_call_download_pages_by_page_id_from_confluence")
 async def download_pages(filtered_pages, tools_map):
     try:
         content_map = []
@@ -115,3 +118,7 @@ async def download_pages(filtered_pages, tools_map):
 
     except Exception as e:
         return []
+
+
+def merge_maps(map1: Dict[str, int], map2: Dict[str, int]) -> Dict[str, int]:
+    return dict(Counter(map1) + Counter(map2))

@@ -1,6 +1,8 @@
 import asyncio
 import uuid
+from contextlib import asynccontextmanager
 
+from langfuse._client.client import Langfuse
 from langgraph.graph import StateGraph, START, END
 from agents import (
     agent_1_generate_cql,
@@ -10,8 +12,7 @@ from agents import (
     agent_5_summarize_the_answer
 )
 from graph_state import RAGState
-from langfuse_utils.oai_sdk_setup import setup_langfuse_tracer
-from langfuse_utils.shared_client import langfuse_client
+from langfuse import get_client
 
 # Node constants
 NODE_1 = "CQL_GENERATION_AGENT"
@@ -19,6 +20,19 @@ NODE_2 = "VECTOR_DB_SEARCH_AGENT"
 NODE_3 = "CONFLUENCE_RESPONSE_CHECKER_AGENT"
 NODE_4 = "VECTOR_DB_RESPONSE_CHECKER_AGENT"
 NODE_5 = "ANSWER_GENERATION_AGENT"
+
+
+@asynccontextmanager
+async def async_resource_manager():
+    print("Acquiring asynchronous resource...")
+    langfuse_client: Langfuse = get_client()
+    try:
+        yield langfuse_client
+    finally:
+        print("Releasing asynchronous resource...")
+        if langfuse_client:
+            langfuse_client.flush()
+            langfuse_client.shutdown()
 
 
 def route_to_start_nodes(state: RAGState):
@@ -69,24 +83,34 @@ confluence_workflow = builder.compile()
 async def execute_user_query(user_query: str):
     print("Graph getting invoked \n\n")
 
-    state = RAGState(
-        session_id=str(uuid.uuid4()),
-        user_query=user_query,
-        confluence_response=[],  # Empty list instead of None
-        filtered_pages=[],  # Empty list instead of None
-        vector_db_response=[],  # Empty list instead of None
-        answer="",
-        cql_queries=[]
-    )
+    async with async_resource_manager() as res:
 
-    # Uncomment this code to run directly....
-    """
-    response = await confluence_workflow.ainvoke(input=state)
-    print(f"Answer to the user query is {response}.")
-    """
+        with res.start_as_current_span(name="Confluence workflow", input=user_query) as span:
 
-    async for chunk in confluence_workflow.astream(input=state, stream_mode="updates"):
-        print(f"Got update from the state {chunk}.")
+            session_id = str(uuid.uuid4())
+            res.create_trace_id(seed=session_id)
+
+            print(f"Starting graph with sessionId {session_id}.")
+            state = RAGState(
+                session_id=session_id,
+                user_query=user_query,
+                confluence_response=[],  # Empty list instead of None
+                filtered_pages=[],  # Empty list instead of None
+                vector_db_response=[],  # Empty list instead of None
+                answer="",
+                cql_queries=[],
+                token_usage=None
+            )
+
+            # Uncomment this code to run directly....
+            """
+            response = await confluence_workflow.ainvoke(input=state)
+            print(f"Answer to the user query is {response}.")
+            """
+
+            async for chunk in confluence_workflow.astream(input=state, stream_mode="updates"):
+                print(f"Got update from the state {chunk}.")
+                span.update(output=chunk)
 
     setup_langfuse_tracer()
 
