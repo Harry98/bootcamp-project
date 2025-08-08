@@ -7,6 +7,8 @@ from agents import agent_3_confluence_filter_pages, agent_1_generate_cql, agent_
 import asyncio
 from dotenv import load_dotenv
 from agents_helper import search_confluence_with_cql_queries, get_tools, download_page_directly_from_mcp
+from graph import execute_user_query
+import threading
 
 load_dotenv()
 
@@ -85,10 +87,41 @@ async def test_download_page_directly_from_mcp():
     print(file)
 
 
+def run_async_gen(query, loop):
+    async def runner():
+        async for chunk in execute_user_query(query):
+            print(f"[{threading.current_thread().name}] Got chunk: {chunk}")
+
+    asyncio.run(runner())
+
+
+def test_execute_user_query():
+    loop = None
+
+    thread_1 = threading.Thread(target=run_async_gen, args=("What is Maple trust bank?", loop,))
+    thread_2 = threading.Thread(target=run_async_gen, args=("What is Maple trust bank?", loop,))
+    thread_3 = threading.Thread(target=run_async_gen, args=("What is Maple trust bank?", loop,))
+    thread_4 = threading.Thread(target=run_async_gen, args=("What is Maple trust bank?", loop,))
+    thread_5 = threading.Thread(target=run_async_gen, args=("What is Maple trust bank?", loop,))
+
+    thread_1.start()
+    thread_2.start()
+    thread_3.start()
+    thread_4.start()
+    thread_5.start()
+
+    thread_1.join()
+    thread_2.join()
+    thread_3.join()
+    thread_4.join()
+    thread_5.join()
+
+
 if __name__ == '__main__':
     print("Starting testing")
     # asyncio.run(test_download_page_directly_from_mcp())
-    test_agent_2_search_vector_db()
+    # test_agent_2_search_vector_db()
+    test_execute_user_query()
     # print("Starting code to be tested.")
     # test_agent_4_confluence_review_agent()
     # test_agent_1_generate_cql()
