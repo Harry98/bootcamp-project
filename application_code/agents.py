@@ -1,10 +1,11 @@
 from langchain_community.callbacks import get_openai_callback
 from llm import LLM, DEEP_RESEARCH_LLM, GEMINI_PRO
 from graph_state import RAGState
-from prompts import CQL_GENERATION_PROMPT, AgentCqlPrompt, CONFLUENCE_PAGE_SYSTEM_MESSAGE
+from prompts import CQL_GENERATION_PROMPT, AgentCqlPrompt, CONFLUENCE_PAGE_SYSTEM_MESSAGE, SUMMARIZATION_PROMPT
 from agents_helper import get_tools, search_confluence_with_cql_queries, iterator, download_pages, merge_maps, async_knowledgebase, transform_search_result
 from langfuse import observe
 from tracking import track_llm_generation
+
 
 
 async def run_langchain_expression(lcl_expression, expression_input):
@@ -123,17 +124,19 @@ async def agent_5_summarize_the_answer(state: RAGState):
     print("Starting agent_5_summarize_the_answer")
     """
     Send LLM user query, filtered_pages, vector_db_response and tools
-    (Send LLM tools to download the page content in Markdown format if required.)
 
     Ask LLM to generate final answer to user query based on the information provided.
     """
-    answer = ""  # Set this equal to the response from LLM
+
+    prompt = SUMMARIZATION_PROMPT.format(user_query=state['user_query'], filtered_pages=state['filtered_pages'], vector_db_response=state['vector_db_response'] )
+
+    answer = LLM.invoke(input = prompt)
+
     return {
         'answer': answer,
         'agent_5_summarize_the_answer_token_usage': {
-            'total_tokens': 0,
-            'input_tokens': 0,
-            'output_tokens': 0,
-            'total_cost': 0
+            'total_tokens': answer.response_metadata["token_usage"]["total_tokens"],
+            'input_tokens': answer.response_metadata["token_usage"]["prompt_tokens"],
+            'output_tokens': answer.response_metadata["token_usage"]["completion_tokens"]
         }
     }
