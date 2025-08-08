@@ -1,11 +1,16 @@
+import dataclasses
 import os
 import asyncio
 import json
+import uuid
 from collections import Counter
 from contextlib import asynccontextmanager
+from enum import Enum
 from typing import List, Dict
 from langfuse import observe
 from langchain_mcp_adapters.client import MultiServerMCPClient
+from pydantic import BaseModel
+
 from kb_weaviate import AsyncWeaviateKnowledgeBase, get_weaviate_async_client, _Source
 import re
 
@@ -41,6 +46,7 @@ async def get_weaviate_client():
         )
     finally:
         if async_weaviate_client:
+            print("Gracefully closing async_weaviate_client.")
             await async_weaviate_client.close()
 
 
@@ -180,3 +186,20 @@ async def create_page_map(parsed_llm_response, content_map: Dict, confluence_res
             'page_url': confluence_response.get(page['page_id'], {}).get('page_url')
         } for page in parsed_llm_response if page['page_id'] not in content_map}
         content_map.update(download_pages_map)
+
+
+class CustomEncoder(json.JSONEncoder):
+    def default(self, obj):
+        if dataclasses.is_dataclass(obj):
+            return dataclasses.asdict(obj)
+        if isinstance(obj, uuid.UUID):
+            return str(obj)
+        if isinstance(obj, Enum):
+            return obj.name  # or obj.value
+        if isinstance(obj, BaseModel):
+            return obj.model_dump()  # or obj.value
+
+        try:
+            return str(obj)  # handles other non-serializable types like BoundingRegion
+        except Exception:
+            return super().default(obj)

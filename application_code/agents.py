@@ -52,7 +52,7 @@ async def agent_2_search_vector_db(state: RAGState):
         results = await async_knowledgebase.search_knowledgebase(
             state.get("user_query")
         ) or []
-
+    # iterator(results)
     vector_db_response = [transform_search_result(res) for res in results]
 
     return {'vector_db_response': vector_db_response}

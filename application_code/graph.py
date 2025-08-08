@@ -1,4 +1,5 @@
 import asyncio
+import json
 import uuid
 from contextlib import asynccontextmanager
 
@@ -13,6 +14,7 @@ from agents import (
 )
 from graph_state import RAGState
 from langfuse import get_client
+from agents_helper import CustomEncoder
 
 # Node constants
 NODE_1 = "CQL_GENERATION_AGENT"
@@ -80,26 +82,24 @@ builder.add_edge(NODE_5, END)
 confluence_workflow = builder.compile()
 
 
-async def execute_user_query(user_query: str):
-    print("Graph getting invoked \n\n")
+async def execute_user_query(user_query: str, history=None):
+    print(f"Graph getting invoked with history {history} \n\n")
 
     async with async_resource_manager() as res:
-
         with res.start_as_current_span(name="Confluence workflow", input=user_query) as span:
-
             session_id = str(uuid.uuid4())
             res.create_trace_id(seed=session_id)
 
-            print(f"Starting graph with sessionId {session_id}.")
+            print(f"Starting graph with sessionId {session_id} and user query {user_query}.")
             state = RAGState(
                 session_id=session_id,
                 user_query=user_query,
-                confluence_response=[],  # Empty list instead of None
+                confluence_response={},  # Empty list instead of None
                 filtered_pages=[],  # Empty list instead of None
                 vector_db_response=[],  # Empty list instead of None
                 answer="",
                 cql_queries=[],
-                token_usage=None
+                page_map={}
             )
 
             # Uncomment this code to run directly....
@@ -111,11 +111,14 @@ async def execute_user_query(user_query: str):
             async for chunk in confluence_workflow.astream(input=state, stream_mode="updates"):
                 print(f"Got update from the state {chunk}.")
                 span.update(output=chunk)
+                yield json.dumps(chunk, indent=2, cls=CustomEncoder)
 
 
 if __name__ == '__main__':
-    test_query = [
-        "What is Maple trust bank?",
-    ]
-    asyncio.run(execute_user_query(test_query[0]))
-        
+    async def main():
+        test_query = "What is Maple trust bank?"
+
+        async for chunk in execute_user_query(test_query):
+            pass  # Or print(chunk) if you want to see results
+
+    asyncio.run(main())

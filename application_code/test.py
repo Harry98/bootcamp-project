@@ -70,11 +70,12 @@ def test_agent_2_search_vector_db():
     dummy_state = RAGState(
         session_id="testing",
         user_query="Tell me about Maple trust bank?",
-        confluence_response=[],
+        confluence_response={},
         filtered_pages=[],
         vector_db_response=[],
         answer="",
-        cql_queries=[]
+        cql_queries=[],
+        page_map={}
     )
     print(asyncio.run(agent_2_search_vector_db(state=dummy_state)))
 
@@ -86,8 +87,8 @@ async def test_download_page_directly_from_mcp():
 
 if __name__ == '__main__':
     print("Starting testing")
-    asyncio.run(test_download_page_directly_from_mcp())
-    # test_agent_2_search_vector_db()
+    # asyncio.run(test_download_page_directly_from_mcp())
+    test_agent_2_search_vector_db()
     # print("Starting code to be tested.")
     # test_agent_4_confluence_review_agent()
     # test_agent_1_generate_cql()
