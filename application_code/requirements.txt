@@ -1,5 +1,5 @@
 aiohttp==3.12.14
-gradio==5.35.0
+gradio==5.41.1
 langfuse==3.2.2
 nest-asyncio==1.6.0
 openai==1.93.1

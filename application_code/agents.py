@@ -2,10 +2,10 @@ from langchain_community.callbacks import get_openai_callback
 from llm import LLM, DEEP_RESEARCH_LLM, GEMINI_PRO
 from graph_state import RAGState
 from prompts import CQL_GENERATION_PROMPT, AgentCqlPrompt, CONFLUENCE_PAGE_SYSTEM_MESSAGE, SUMMARIZATION_PROMPT
-from agents_helper import get_tools, search_confluence_with_cql_queries, iterator, download_pages, merge_maps, async_knowledgebase, transform_search_result
+from agents_helper import get_tools, search_confluence_with_cql_queries, iterator, download_pages, merge_maps, \
+    get_weaviate_client, transform_search_result, convert_llm_response_to_dict, create_page_map
 from langfuse import observe
 from tracking import track_llm_generation
-
 
 
 async def run_langchain_expression(lcl_expression, expression_input):
@@ -31,13 +31,16 @@ async def agent_1_generate_cql(state: RAGState):
         'user_query': state.get("user_query")
     })
 
-    iterator(response['result'].cql_queries)
-
     confluence_response = await search_confluence_with_cql_queries(response['result'].cql_queries)
-    # iterator(confluence_response)
+
+    """
+    # Iterating response.
+    iterator(response['result'].cql_queries)
+    iterator(confluence_response)
+    """
     return {
         'cql_queries': response['result'],
-        'confluence_response': confluence_response,
+        'confluence_response': {page['page_id']: page for page in confluence_response},
         'agent_1_generate_cql_token_usage': response['token_usage']
     }
 
@@ -45,60 +48,78 @@ async def agent_1_generate_cql(state: RAGState):
 @observe(name="agent_2_search_vector_db")
 async def agent_2_search_vector_db(state: RAGState):
     print("Starting agent_2_search_vector_db")
-    """
-    Connect to vector DB and perform semantic search....
-    Pass user query as input.
-    """
-    results = await async_knowledgebase.search_knowledgebase(
-                state.get("user_query")
-    )
-    vector_db_response = []
-    for res in results:
-        vector_db_response.append(transform_search_result(res))
-    return {
-        'vector_db_response': vector_db_response
-    }
+    async with get_weaviate_client() as async_knowledgebase:
+        results = await async_knowledgebase.search_knowledgebase(
+            state.get("user_query")
+        ) or []
+    # iterator(results)
+    vector_db_response = [transform_search_result(res) for res in results]
+
+    return {'vector_db_response': vector_db_response}
 
 
 @track_llm_generation(name="agent_3_confluence_filter_pages", model_name=GEMINI_PRO)
 async def agent_3_confluence_filter_pages(state: RAGState):
     print("Starting agent_3_confluence_filter_pages")
     """
-      Filter the pages got from confluence based on their usefulness in answering the user query.
-      Send LLM tools to download the page content in Markdown format if required.
+      Filter the pages from Confluence based on their usefulness in answering the user query.
+      Optionally download page content in Markdown format if needed.
     """
 
-    # Fetching tools from MCP Server and making first call to LLM.
+    # Fetch LLM tools from MCP Server
     tools = await get_tools()
-    tools_map = {t.name: t for t in tools}
+    tools_map = {t.name: t for t in tools}  # Map tool name -> tool object
+
+    # Create the LangChain pipeline for filtering pages
     filter_pages_lcl = CONFLUENCE_PAGE_SYSTEM_MESSAGE | DEEP_RESEARCH_LLM.bind_tools(tools)
-    filtered_response = await run_langchain_expression(filter_pages_lcl, {
-        'user_query': state['user_query'],
-        'confluence_pages_list': state['confluence_response'],
-        'tool_outputs': "Right now there is no output. You have to indentify pages for which tool needs to be called."
-    })
-    filtered_pages = filtered_response['result']
-    print(f"Filtered pages llm response 1st try {filtered_pages}.")
+    # Store downloaded page content
+    content_map = {}
+    # Track token usage for debugging/monitoring
+    token_usage = {}
+    no_of_tries = 0
+    continue_calling = True
 
-    # Downloading pages from the confluence.
-    content_map = await download_pages(filtered_pages, tools_map)
+    while continue_calling:
+        no_of_tries += 1
 
-    if not content_map or len(content_map) == 0:
-        return {
-            'filtered_pages': filtered_pages.content,
-            'agent_3_confluence_filter_pages_token_usage': filtered_response['token_usage']
-        }
-    else:
-        tools_response = await run_langchain_expression(filter_pages_lcl, {
+        # Run the LLM to decide which pages are useful and whether any need downloading
+        filtered_response = await run_langchain_expression(filter_pages_lcl, {
             'user_query': state['user_query'],
-            'confluence_pages_list': state['confluence_response'],
-            'tool_outputs': content_map
+            'confluence_pages_list': list(state['confluence_response'].values()),
+            'tool_outputs': (
+                "Right now there is no output. You have to indentify pages for which tool needs to be called."
+                if len(content_map) == 0 else content_map
+            )
         })
-        print(f"Filtered pages llm response 2st try {tools_response['result']}.")
-        return {
-            'filtered_pages': tools_response['result'].content,
-            'agent_3_confluence_filter_pages_token_usage': merge_maps(tools_response['token_usage'], filtered_response['token_usage'])
-        }
+
+        filtered_pages = filtered_response['result']
+        # Download any pages the LLM identified as needed
+        content_map = await download_pages(
+            filtered_pages,
+            tools_map,
+            state['confluence_response'],
+            content_map
+        )
+
+        print(f"Filtered pages llm response [Try Count: {no_of_tries}] {content_map.keys()} LLM: {filtered_pages}.")
+        # Merge token usage for monitoring
+        token_usage = merge_maps(token_usage, filtered_response['token_usage'])
+
+        # Continue loop if the LLM returned empty content
+        continue_calling = filtered_pages.content.strip() == ''
+        print(
+            f"Filtered pages token usage [Continue calling {continue_calling}] [Try Count: {no_of_tries}] {token_usage}.")
+
+        if not continue_calling:
+            # Parse the final LLM output into a dictionary
+            parsed_llm_response = convert_llm_response_to_dict(filtered_pages.content)
+            await create_page_map(parsed_llm_response, content_map, state['confluence_response'])
+
+            return {
+                'filtered_pages': parsed_llm_response,
+                'agent_3_confluence_filter_pages_token_usage': token_usage,
+                'page_map': content_map
+            }
 
 
 @track_llm_generation(name="agent_4_vector_db_filter_records")
@@ -123,20 +144,19 @@ async def agent_4_vector_db_filter_records(state: RAGState):
 async def agent_5_summarize_the_answer(state: RAGState):
     print("Starting agent_5_summarize_the_answer")
     """
-    Send LLM user query, filtered_pages, vector_db_response and tools
+    Send LLM user query, filtered_pages, vector_db_response
 
     Ask LLM to generate final answer to user query based on the information provided.
     """
 
-    prompt = SUMMARIZATION_PROMPT.format(user_query=state['user_query'], filtered_pages=state['filtered_pages'], vector_db_response=state['vector_db_response'] )
-
-    answer = LLM.invoke(input = prompt)
+    summary_lcl = SUMMARIZATION_PROMPT | LLM
+    summary_response = await run_langchain_expression(summary_lcl, {
+        'user_query': state['user_query'],
+        'filtered_pages': state['page_map'],
+        'vector_db_response': state['vector_db_response']
+    })
 
     return {
-        'answer': answer,
-        'agent_5_summarize_the_answer_token_usage': {
-            'total_tokens': answer.response_metadata["token_usage"]["total_tokens"],
-            'input_tokens': answer.response_metadata["token_usage"]["prompt_tokens"],
-            'output_tokens': answer.response_metadata["token_usage"]["completion_tokens"]
-        }
+        'answer': summary_response['result'].content,
+        'agent_5_summarize_the_answer_token_usage': summary_response['token_usage']
     }
